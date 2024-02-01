@@ -846,6 +846,13 @@
   </url>
   
   <url>
+    <loc>https://blog.tangkunyin.com/tags/back-end/</loc>
+    <lastmod>2024-02-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.tangkunyin.com/tags/impression/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -854,13 +861,6 @@
   
   <url>
     <loc>https://blog.tangkunyin.com/tags/traveling/</loc>
-    <lastmod>2024-02-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.tangkunyin.com/tags/back-end/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -881,14 +881,14 @@
   </url>
   
   <url>
-    <loc>https://blog.tangkunyin.com/tags/tools/</loc>
+    <loc>https://blog.tangkunyin.com/tags/configs/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.tangkunyin.com/tags/configs/</loc>
+    <loc>https://blog.tangkunyin.com/tags/tools/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
