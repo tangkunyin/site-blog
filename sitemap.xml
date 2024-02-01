@@ -727,20 +727,6 @@
   </url>
   
   <url>
-    <loc>https://blog.tangkunyin.com/tags/dev-tips/</loc>
-    <lastmod>2024-02-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.tangkunyin.com/tags/productivity/</loc>
-    <lastmod>2024-02-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.tangkunyin.com/tags/flutter/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -762,7 +748,14 @@
   </url>
   
   <url>
-    <loc>https://blog.tangkunyin.com/tags/javascript/</loc>
+    <loc>https://blog.tangkunyin.com/tags/dev-tips/</loc>
+    <lastmod>2024-02-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.tangkunyin.com/tags/productivity/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -784,6 +777,13 @@
   
   <url>
     <loc>https://blog.tangkunyin.com/tags/web/</loc>
+    <lastmod>2024-02-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.tangkunyin.com/tags/javascript/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -881,14 +881,14 @@
   </url>
   
   <url>
-    <loc>https://blog.tangkunyin.com/tags/configs/</loc>
+    <loc>https://blog.tangkunyin.com/tags/tools/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.tangkunyin.com/tags/tools/</loc>
+    <loc>https://blog.tangkunyin.com/tags/configs/</loc>
     <lastmod>2024-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
