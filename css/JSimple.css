@@ -341,23 +341,17 @@ a.btn:hover {
 .btn-twitter:hover {
     background: #3897f0;
 }
-.btn-slack {
-    background: #4d394b;
+.btn-youtube {
+    background: #ff0000;
 }
-.btn-slack:hover {
-    background: #4d3447;
+.btn-youtube:hover {
+    background: #be0101;
 }
-.btn-sinaWb {
-    background-color: #f96774;
+.btn-reddit {
+    background-color: #ff3c00;
 }
-.btn-sinaWb:hover {
-    background-color: #e34e5c;
-}
-.btn-facebook {
-    background-color: #1c95f4;
-}
-.btn-facebook:hover {
-    background-color: #3286f9;
+.btn-reddit:hover {
+    background-color: #fb5522;
 }
 .btn-github {
     background-color: #999999;
