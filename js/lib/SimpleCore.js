@@ -408,7 +408,7 @@ const SimpleCore = {
         $(document).on('click', '.btn-sns-qr', function (e) {
             e.preventDefault();
             if (SimpleCore.snsQRCode != '') {
-                SimpleCore.alert('交个朋友，扫我','<img style="width:180px;background:#fff;" src="' + SimpleCore.snsQRCode + '">');
+                SimpleCore.alert('扫码，交个朋友','<img style="width:280px;background:#fff;" src="' + SimpleCore.snsQRCode + '">');
             } else {
                 SimpleCore.alert('未开通社交功能','<h4 style="text-align: center;margin: 0">联系博主试试看 ：）</h4>');
             }
@@ -416,7 +416,7 @@ const SimpleCore = {
         $(document).on('click', '.btn-thumbs-up', function (e) {
             e.preventDefault();
             if (SimpleCore.donateImg != '') {
-                SimpleCore.alert('随意赞赏，谢谢','<img style="width:180px;background:#fff;" src="' + SimpleCore.donateImg + '">');
+                SimpleCore.alert('随意赞赏，谢谢','<img style="width:280px;background:#fff;" src="' + SimpleCore.donateImg + '">');
             } else {
                 SimpleCore.alert('未开通赞赏功能','<h4 style="text-align: center;margin: 0">联系博主试试看 ：）</h4>');
             }
@@ -525,23 +525,26 @@ const SimpleCore = {
         }
     },
     alert (title,msg) {
-        const id = 'notice-' + (new Date().getTime());
-        const html = '<div id="' + id + '" class="notice-item">'
+        const notice = $('#notice');
+        if (notice.length > 0) {
+            return false;   
+        }
+        
+        $('<div id="notice"></div>').appendTo($('body'));
+        const item = 'notice-' + (new Date().getTime());
+        const html = '<div id="' + item + '" class="notice-item">'
             + '<span class="notice-item-close"><i class="fa fa-close"></i></span>'
             + '<p><h3 style="text-align: center;margin:0 0 10px 0">'+title+'</h3>' + msg + '</p></div>';
-        const notice = $('#notice');
-        if (notice.length == 0) {
-            $('<div id="notice"></div>').appendTo($('body'));
-        }
         $(html).appendTo($('#notice')).on('click', '.notice-item-close', function () {
-            $(this).parent().remove();
+            $('#notice').remove();
             return false;
         });
-        //居中显示，于8秒后自动关闭
+        
+        //居中显示，于x秒后自动关闭
         $('#notice').css('margin-right', -$('#notice').width() / 2);
         setTimeout(function () {
-            $('#' + id).remove();
-        }, 8000);
+            $('#notice').remove();
+        }, 10000);
     },
     setLocalData (key, value) {
         if (window.localStorage) {
