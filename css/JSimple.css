@@ -648,12 +648,15 @@ body {
     background: #f6cec7;
     border-color: #f6cec7;
 }
+.post-tags {
+    margin: 5px 0;
+}
 .post-tags a {
     padding: 0 5px;
     display: inline-block;
 }
 .post-tags a:hover {
-    background-color: #333;
+    background-color: #f28979;
     color: #fff;
 }
 #btn-pager {
