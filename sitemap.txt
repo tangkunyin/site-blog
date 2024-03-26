@@ -1,3 +1,5 @@
+https://thomartisen.com/about/index.html
+https://thomartisen.com/tags/index.html
 https://thomartisen.com/groceries/jsimple-usage.html
 https://thomartisen.com/groceries/permalink-optimize-hexo.html
 https://thomartisen.com/hulife/the-optimization-about-tags.html
@@ -73,8 +75,6 @@ https://thomartisen.com/prdeve/pushViewController-change.html
 https://thomartisen.com/prdeve/thinking-about-work.html
 https://thomartisen.com/prdeve/create-rn-in-better-way.html
 https://thomartisen.com/prdeve/about-git.html
-https://thomartisen.com/tags/index.html
-https://thomartisen.com/about/index.html
 https://thomartisen.com/
 https://thomartisen.com/tags/proglangs/
 https://thomartisen.com/tags/apple/

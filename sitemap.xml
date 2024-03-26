@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://thomartisen.com/about/index.html</loc>
+    
+    <lastmod>2024-03-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/tags/index.html</loc>
+    
+    <lastmod>2024-03-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://thomartisen.com/groceries/jsimple-usage.html</loc>
     
     <lastmod>2024-03-26</lastmod>
@@ -671,24 +689,6 @@
     <loc>https://thomartisen.com/prdeve/about-git.html</loc>
     
     <lastmod>2024-03-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/tags/index.html</loc>
-    
-    <lastmod>2024-03-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/about/index.html</loc>
-    
-    <lastmod>2024-03-22</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
