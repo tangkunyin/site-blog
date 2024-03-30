@@ -1,3 +1,4 @@
+https://thomartisen.com/prdeve/docker-usage.html
 https://thomartisen.com/about/index.html
 https://thomartisen.com/tags/index.html
 https://thomartisen.com/groceries/jsimple-usage.html
@@ -70,7 +71,6 @@ https://thomartisen.com/hulife/car-first-maintenance.html
 https://thomartisen.com/prdeve/cross-platform-desktop.html
 https://thomartisen.com/prdeve/swift-in-serverside.html
 https://thomartisen.com/prdeve/reinstall-mysql.html
-https://thomartisen.com/prdeve/docker-usage.html
 https://thomartisen.com/prdeve/pushViewController-change.html
 https://thomartisen.com/prdeve/thinking-about-work.html
 https://thomartisen.com/prdeve/create-rn-in-better-way.html
