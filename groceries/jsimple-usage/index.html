@@ -31,7 +31,7 @@ keywords:
 description:
 photos:
 - img/2017/demo.jpg
----</code></pre><blockquote><p>如果新建的文章要归属于某个分类，请在<code>categories</code>处对应你的分类名称即可。标签使用同理，一篇文章可以有多个标签，打标签的方式就是写成数组方式。<code>photos</code>是缩略图，地址可以是相对的，也可以是绝对的。</p></blockquote><p><strong>page</strong>模板同上，但没有<code>categories</code>和<code>tags</code>，多了<code>comments</code>，后者用来控制独立页是否支持评论组件。至于要把作者的信息放到模板里，是考虑到如果网站采用投稿方式，可以保留原创信息。即：显示不同作者不同文章信息，不会乱！</p><h4 id="2、站点分类别名和自定义URL配置"><a href="#2、站点分类别名和自定义URL配置" class="headerlink" title="2、站点分类别名和自定义URL配置"></a>2、站点分类别名和自定义URL配置</h4><p>关于自定义URL，请参考这篇文章：<a href="https://thomartisen.com/groceries/hexo-perfect-link.html">在hexo博客中打造相对完美的URL</a></p><p><strong>分类别名</strong>和<strong>标签别名</strong>配置，站点<code>_config.yml</code>文件中，其中主题配置文件里的<code>menu</code>项需要和<code>category_map</code>键值对一致。二者顺序可以不同，但是主题中的顺序决定网站导航栏菜单的顺序。</p><pre><code class="hljs plaintext"># Category &amp; Tag
+---</code></pre><blockquote><p>如果新建的文章要归属于某个分类，请在<code>categories</code>处对应你的分类名称即可。标签使用同理，一篇文章可以有多个标签，打标签的方式就是写成数组方式。<code>photos</code>是缩略图，地址可以是相对的，也可以是绝对的。</p></blockquote><p><strong>page</strong>模板同上，但没有<code>categories</code>和<code>tags</code>，多了<code>comments</code>，后者用来控制独立页是否支持评论组件。至于要把作者的信息放到模板里，是考虑到如果网站采用投稿方式，可以保留原创信息。即：显示不同作者不同文章信息，不会乱！</p><h4 id="2、站点分类别名和自定义URL配置"><a href="#2、站点分类别名和自定义URL配置" class="headerlink" title="2、站点分类别名和自定义URL配置"></a>2、站点分类别名和自定义URL配置</h4><p>关于自定义URL，请参考这篇文章：<a href="https://thomartisen.com/groceries/hexo-perfect-link/">在hexo博客中打造相对完美的URL</a></p><p><strong>分类别名</strong>和<strong>标签别名</strong>配置，站点<code>_config.yml</code>文件中，其中主题配置文件里的<code>menu</code>项需要和<code>category_map</code>键值对一致。二者顺序可以不同，但是主题中的顺序决定网站导航栏菜单的顺序。</p><pre><code class="hljs plaintext"># Category &amp; Tag
 default_category: 技术
 category_map:
    技术: tech
