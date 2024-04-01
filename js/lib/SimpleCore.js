@@ -363,6 +363,7 @@ const LocalSearch = {
  */
 const SimpleCore = {
     buildingTime: new Date(),
+    highlightTheme: null,
     isPost: 'false',
     prevTop: 0,
     headerShow: true,
@@ -372,6 +373,7 @@ const SimpleCore = {
     readMode: 'day',
     initParams (params) {
         SimpleCore.buildingTime = params.buildingTime;
+        SimpleCore.highlightTheme = params.highlightTheme;
         SimpleCore.isPost = params.isPost;
         SimpleCore.snsQRCode = params.snsQRCode;
         SimpleCore.donateImg = params.donateImg;
@@ -523,6 +525,12 @@ const SimpleCore = {
             btn.find('i').attr('class', 'fa fa-sun-o');
             $(".cover-img").attr('src', location.origin + '/images/cover-day.jpg');
         }
+        // 设置高亮主题
+        let highlCss = SimpleCore.highlightTheme || 'default';
+        if (highlCss !== 'default') {
+            highlCss += SimpleCore.getLocalData('read-mode') == 'night' ? '-dark' : '-light';
+        }
+        $('#highl_css').load(`/css/${highlCss}.min.css`);
     },
     alert (title,msg) {
         const notice = $('#notice');
