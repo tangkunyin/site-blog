@@ -820,8 +820,17 @@ body {
     margin-left: 5px;
 }
 
+.tags-bg {
+    margin: 2% 0;
+}
+
+.tags-bg img {
+    box-sizing: content-box;
+    max-width: 100%;
+}
+
 .tag-list {
-    padding: 0;
+    padding-bottom: 2%;
 }
 
 .tag-list li {
@@ -829,18 +838,12 @@ body {
     width: 24%;
 }
 
-.tags-bg {
-    margin-top: 15%;
-}
-
-.tags-bg img {
-    box-sizing: content-box;
-    max-width: 100%;
-    margin: 10px;
-}
-
 .flinks li {
     width: 32%;
+}
+
+.tagV-ads {
+    min-height: 300px;
 }
 
 #search {
