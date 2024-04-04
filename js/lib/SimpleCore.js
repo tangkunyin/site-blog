@@ -519,11 +519,11 @@ const SimpleCore = {
         if (SimpleCore.getLocalData('read-mode') == 'night') {
             $('body').addClass('night-mode');
             btn.find('i').attr('class', 'fa fa-moon-o');
-            $(".cover-img").attr('src', location.origin + '/images/cover-night.jpg');
+            $(".cover-img").attr('src', location.origin + '/images/cover-night.webp');
         } else {
             $('body').removeClass('night-mode');
             btn.find('i').attr('class', 'fa fa-sun-o');
-            $(".cover-img").attr('src', location.origin + '/images/cover-day.jpg');
+            $(".cover-img").attr('src', location.origin + '/images/cover-day.webp');
         }
         // 设置高亮主题
         let highlCss = SimpleCore.highlightTheme || 'default';
