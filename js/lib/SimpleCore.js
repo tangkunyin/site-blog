@@ -608,6 +608,5 @@ const SimpleCore = {
 };
 
 $(function () {
-    window.jsi_config ? SimpleCore.init(window.jsi_config)
-     : console.error('JSimple get wrong config: ', window.jsi_config)
+    window.jsi_config ? SimpleCore.init(window.jsi_config) : console.error('JSimple get wrong config: ', window.jsi_config)
 });
