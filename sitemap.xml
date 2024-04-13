@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://thomartisen.com/ditech/nodeppt/</loc>
+    <loc>https://thomartisen.com/prdeve/docker-usage/</loc>
     
-    <lastmod>2024-04-01</lastmod>
+    <lastmod>2024-04-13</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -12,6 +12,33 @@
   
   <url>
     <loc>https://thomartisen.com/groceries/permalink-optimize-hexo/</loc>
+    
+    <lastmod>2024-04-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/groceries/hexo-perfect-link/</loc>
+    
+    <lastmod>2024-04-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/groceries/jsimple-usage/</loc>
+    
+    <lastmod>2024-04-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/ditech/nodeppt/</loc>
     
     <lastmod>2024-04-01</lastmod>
     
@@ -65,15 +92,6 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/groceries/jsimple-usage/</loc>
-    
-    <lastmod>2024-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://thomartisen.com/prdeve/prepare-to-dev-desktop/</loc>
     
     <lastmod>2024-04-01</lastmod>
@@ -104,15 +122,6 @@
     <loc>https://thomartisen.com/prdeve/reduce-array-to-object/</loc>
     
     <lastmod>2024-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/prdeve/docker-usage/</loc>
-    
-    <lastmod>2024-03-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -533,15 +542,6 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/groceries/hexo-perfect-link/</loc>
-    
-    <lastmod>2024-03-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://thomartisen.com/prdeve/mobile-web-develop-notes/</loc>
     
     <lastmod>2024-03-26</lastmod>
@@ -697,7 +697,7 @@
 
   <url>
     <loc>https://thomartisen.com/</loc>
-    <lastmod>2024-04-12</lastmod>
+    <lastmod>2024-04-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -705,105 +705,105 @@
   
   <url>
     <loc>https://thomartisen.com/tags/proglangs/</loc>
-    <lastmod>2024-04-12</lastmod>
+    <lastmod>2024-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://thomartisen.com/tags/apple/</loc>
-    <lastmod>2024-04-12</lastmod>
+    <lastmod>2024-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://thomartisen.com/tags/efficiency/</loc>
-    <lastmod>2024-04-12</lastmod>
+    <lastmod>2024-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://thomartisen.com/tags/infrastructure/</loc>
-    <lastmod>2024-04-12</lastmod>
+    <lastmod>2024-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://thomartisen.com/tags/frontend/</loc>
-    <lastmod>2024-04-12</lastmod>
+    <lastmod>2024-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://thomartisen.com/tags/frameworks/</loc>
-    <lastmod>2024-04-12</lastmod>
+    <lastmod>2024-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://thomartisen.com/tags/theways/</loc>
-    <lastmod>2024-04-12</lastmod>
+    <lastmod>2024-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://thomartisen.com/tags/technology/</loc>
-    <lastmod>2024-04-12</lastmod>
+    <lastmod>2024-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://thomartisen.com/tags/prose/</loc>
-    <lastmod>2024-04-12</lastmod>
+    <lastmod>2024-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://thomartisen.com/tags/digital/</loc>
-    <lastmod>2024-04-12</lastmod>
+    <lastmod>2024-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://thomartisen.com/tags/reading/</loc>
-    <lastmod>2024-04-12</lastmod>
+    <lastmod>2024-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://thomartisen.com/tags/life/</loc>
-    <lastmod>2024-04-12</lastmod>
+    <lastmod>2024-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://thomartisen.com/tags/traveling/</loc>
-    <lastmod>2024-04-12</lastmod>
+    <lastmod>2024-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://thomartisen.com/tags/projectx/</loc>
-    <lastmod>2024-04-12</lastmod>
+    <lastmod>2024-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://thomartisen.com/tags/backend/</loc>
-    <lastmod>2024-04-12</lastmod>
+    <lastmod>2024-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -812,28 +812,28 @@
   
   <url>
     <loc>https://thomartisen.com/categories/prdeve/</loc>
-    <lastmod>2024-04-12</lastmod>
+    <lastmod>2024-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://thomartisen.com/categories/groceries/</loc>
-    <lastmod>2024-04-12</lastmod>
+    <lastmod>2024-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://thomartisen.com/categories/ditech/</loc>
-    <lastmod>2024-04-12</lastmod>
+    <lastmod>2024-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://thomartisen.com/categories/hulife/</loc>
-    <lastmod>2024-04-12</lastmod>
+    <lastmod>2024-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

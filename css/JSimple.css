@@ -667,18 +667,21 @@ img.avatar {
 }
 
 .post-title {
-    font-weight: 500;
-    color: #566;
+    color: #555;
+}
+
+.post-title-item {
     font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
+.post-title-item:hover {
+    text-decoration: underline;
 }
 
 .post-desc {
-    font-family: "Kaiti SC";
     font-weight: 'bold';
-}
-
-.post-title:hover {
-    color: #333;
+    color: #666;
 }
 
 .post-meta {
