@@ -718,14 +718,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/tags/efficiency/</loc>
-    <lastmod>2024-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/tags/infrastructure/</loc>
+    <loc>https://thomartisen.com/tags/theways/</loc>
     <lastmod>2024-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -746,7 +739,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/tags/theways/</loc>
+    <loc>https://thomartisen.com/tags/infrastructure/</loc>
     <lastmod>2024-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -754,6 +747,13 @@
   
   <url>
     <loc>https://thomartisen.com/tags/technology/</loc>
+    <lastmod>2024-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/tags/efficiency/</loc>
     <lastmod>2024-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

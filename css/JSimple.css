@@ -675,6 +675,10 @@ img.avatar {
 .post-title {
     color: #555;
 }
+.post-title:hover {
+    text-decoration: underline;
+    color: #333;
+}
 
 .post-title-item {
     color: #333;
