@@ -78,12 +78,12 @@ https://thomartisen.com/prdeve/about-git/
 https://thomartisen.com/
 https://thomartisen.com/tags/proglangs/
 https://thomartisen.com/tags/apple/
-https://thomartisen.com/tags/theways/
 https://thomartisen.com/tags/frontend/
 https://thomartisen.com/tags/frameworks/
-https://thomartisen.com/tags/infrastructure/
-https://thomartisen.com/tags/technology/
 https://thomartisen.com/tags/efficiency/
+https://thomartisen.com/tags/infrastructure/
+https://thomartisen.com/tags/theways/
+https://thomartisen.com/tags/technology/
 https://thomartisen.com/tags/prose/
 https://thomartisen.com/tags/digital/
 https://thomartisen.com/tags/reading/
