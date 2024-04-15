@@ -662,6 +662,12 @@ img.avatar {
     display: block;
 }
 
+.post-header h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.12em;
+}
+
 .post-header:last-child {
     margin: 0;
 }
@@ -671,8 +677,6 @@ img.avatar {
 }
 
 .post-title-item {
-    font-size: 16px;
-    font-weight: 500;
     color: #333;
 }
 .post-title-item:hover {
@@ -822,6 +826,15 @@ img.avatar {
     margin-left: 5px;
 }
 
+.archives-title {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.archives-title a:hover {
+    text-decoration: underline;
+}
+
 .tags-bg {
     margin: 2% 0;
 }
@@ -838,6 +851,15 @@ img.avatar {
 .tag-list li {
     display: inline-block;
     width: 24%;
+}
+
+.tag-list-item {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.tag-list-item a:hover {
+    text-decoration: underline;
 }
 
 .flinks li {
