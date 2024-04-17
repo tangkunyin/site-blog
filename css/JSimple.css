@@ -1097,7 +1097,7 @@ body.night-mode,
 
 .night-mode .page-title li a:hover {
     background-color: #2f2f2f !important;
-    color: #b1b1b1;
+    color: #fff;
 }
 
 .night-mode input,
@@ -1122,7 +1122,11 @@ body.night-mode a,
 .night-mode .post-meta a,
 .night-mode .post-meta span,
 .night-mode .page-number.current {
-    color: #b1b1b1;
+    color: #e2e2e2;
+}
+
+.night-mode a:hover,a:visited {
+    color: #fff;
 }
 
 .night-mode .post-tool a {
@@ -1130,7 +1134,7 @@ body.night-mode a,
 }
 
 .night-mode .post-desc {
-    color: #fff;
+    color: #b1b1b1;
 }
 
 .night-mode .post-author a,
