@@ -327,7 +327,7 @@ input[type="file"] {
 
 ::selection {
     color: #fff;
-    background-color: #2b2b2b;
+    background-color: #e78170;
 }
 
 ::-moz-selection {
@@ -430,6 +430,7 @@ img.avatar {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
+    margin-bottom: 15px;
 }
 
 #wrapper {
@@ -479,30 +480,27 @@ img.avatar {
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 30px 0;
+    padding: 25% 0;
     color: white;
     text-align: center;
 }
 
-#cover .cover-siteName {
-    font-family: Kai, Kaiti SC, KaiTi, BiauKai, \\6977\4F53, \\6977\4F53_GB2312,
-        Songti SC, serif;
-}
-
-#cover .cover-siteTitle {
+#cover h1,h3,h4 {
     font-family: Georgia, Times New Roman, Times, Songti SC, serif;
+    margin: 8px 0;
 }
 
-#cover .cover-siteDesc {
-    font-family: "Kaiti SC";
+#cover .cover-sns {
+    margin: 15px;
 }
 
 #cover .cover-sns .btn {
-    height: 24px;
-    line-height: 24px;
-    padding: 0 5px;
     display: inline-block;
     position: relative;
+    height: 26px;
+    line-height: 26px;
+    margin: 0 5px;
+    cursor: pointer;
 }
 
 #cover .cover-sns .btn a {
