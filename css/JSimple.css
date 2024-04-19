@@ -1124,8 +1124,7 @@ body.night-mode a,
 .night-mode .page-number.current {
     color: #e2e2e2;
 }
-
-.night-mode a:hover,a:visited {
+.night-mode a:hover,a:focus {
     color: #fff;
 }
 
