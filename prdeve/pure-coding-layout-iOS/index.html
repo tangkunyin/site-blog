@@ -17,266 +17,266 @@
             }
         
         window.jsi_config = jsi_config;
-    })()</script><script>!function(t,e,n,c,r,s,a){t[n]=t[n]||function(){(t[n].q=t[n].q||[]).push(arguments)},(s=e.createElement(c)).async=1,s.src="https://www.clarity.ms/tag/lzvhfsbhmv?ref=bwt",(a=e.getElementsByTagName(c)[0]).parentNode.insertBefore(s,a)}(window,document,"clarity","script")</script><meta name="generator" content="Hexo 7.1.1"></head><body><div id="nav"><nav class="nav-menu"><a class="site-name current" href="/" title="TM">TM</a><a class="site-index current" href="/"><i class="fa fa-home"></i> <span>首页</span></a><a href="/archives" title="归档"><i class="fa fa-archives"></i> <span>归档</span></a><a href="/tags" title="标签"><i class="fa fa-tags"></i> <span>标签</span></a><a href="/about" title="关于"><i class="fa fa-question-circle"></i> <span>关于</span></a></nav></div><div class="nav-user"><a class="btn-search" title="search bar" href="#"><i class="fa fa-search"></i></a><a class="btn-read-mode" title="readMode bar" href="#"><i class="fa fa-sun-o"></i></a><a class="btn-sns-qr" href="javascript:" rel="external nofollow noreferrer"><i class="fa fa-telegram"></i></a></div><div id="wrapper" class="clearfix"><div id="body"><div class="main" id="main"><div id="cover"><img class="cover-img" src="/images/cover-day.webp" alt="cover-img" loading="lazy"><div class="cover-info"><img class="avatar" src="/images/logo.webp" width="100" alt="avatar" loading="lazy"><h1>托码特人</h1><h3>用代码摇滚这个世界</h3><h4>一个关注科技与人文的技术博客</h4><div class="cover-sns"><div class="btn btn-twitter"><a href="https://twitter.com/thomartisen" title="twitter" rel="external nofollow noopener" target="_blank"><i class="fa fa-twitter"></i></a></div><div class="btn btn-reddit"><a href="https://www.reddit.com/user/thomartisen" title="reddit" rel="external nofollow noopener" target="_blank"><i class="fa fa-reddit"></i></a></div><div class="btn btn-youtube"><a href="https://www.youtube.com/@thomartisen" title="youtube" rel="external nofollow noopener" target="_blank"><i class="fa fa-youtube"></i></a></div><div class="btn btn-medium"><a href="https://thomartisen.medium.com" title="medium" rel="external nofollow noopener" target="_blank"><i class="fa fa-medium"></i></a></div></div></div></div><div class="page-title"><ul><li><a href="/">最新</a></li><li class="active"><a href="/categories/prdeve" data-name="产品研发">产品研发</a></li><li><a href="/categories/ditech" data-name="数码科技">数码科技</a></li><li><a href="/categories/hulife" data-name="人文生活">人文生活</a></li><li><a href="/categories/groceries" data-name="杂货铺">杂货铺</a></li><li class="page-search"><form id="search" class="search-form"><input type="text" readonly id="local-search-input-tip" placeholder="读物检索~"> <button type="button" disabled class="search-form-submit"><i class="fa fa-search"></i></button></form></li></ul></div><div class="main-inner"><article class="post" itemscope itemtype="https://schema.org/BlogPosting"><div class="post-header"><div class="post-author clearfix" itemscope itemtype="https://schema.org/Person"><a class="avatar fleft" target="_blank" href="https://tangkunyin.com" rel="author noopener"><img width="48" src="/images/avatar.webp" alt="avatar" itemprop="image"></a><p><span class="label">作者</span> <a target="_blank" rel="noopener" href="https://tangkunyin.com" itemprop="url"><span itemprop="name">托码斯</span></a> <span itemprop="datePublished" content="2018-06-03T16:41:56.000+08:00">最后编辑于&nbsp;2018-06-03</span></p><p itemprop="description">一个写代码的「伪文人」</p></div><h1 class="post-title"><a target="_self" href="https://thomartisen.com/prdeve/pure-coding-layout-iOS/" itemprop="mainEntityOfPage"><span itemprop="headline">iOS布局工具类</span></a></h1><div class="post-meta" itemprop="wordCount">本文共计13316个字 | <span id="busuanzi_container_page_pv">你是第&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位到访读者</span></div></div><div class="post-content markdown-body" itemprop="articleBody"><h2 id="代码笔记"><a href="#代码笔记" class="headerlink" title="代码笔记"></a>代码笔记</h2><p>来自2015.4.25的笔记，iOS手码布局工具类</p><h3 id="头文件"><a href="#头文件" class="headerlink" title="头文件"></a>头文件</h3><pre><code class="hljs objective-c">#import &lt;Foundation/Foundation.h&gt;
+    })()</script><script>!function(t,e,n,c,r,s,a){t[n]=t[n]||function(){(t[n].q=t[n].q||[]).push(arguments)},(s=e.createElement(c)).async=1,s.src="https://www.clarity.ms/tag/lzvhfsbhmv?ref=bwt",(a=e.getElementsByTagName(c)[0]).parentNode.insertBefore(s,a)}(window,document,"clarity","script")</script><meta name="generator" content="Hexo 7.1.1"></head><body><div id="nav"><nav class="nav-menu"><a class="site-name current" href="/" title="TM">TM</a><a class="site-index current" href="/"><i class="fa fa-home"></i> <span>首页</span></a><a href="/archives" title="归档"><i class="fa fa-archives"></i> <span>归档</span></a><a href="/tags" title="标签"><i class="fa fa-tags"></i> <span>标签</span></a><a href="/about" title="关于"><i class="fa fa-question-circle"></i> <span>关于</span></a></nav></div><div class="nav-user"><a class="btn-search" title="search bar" href="#"><i class="fa fa-search"></i></a><a class="btn-read-mode" title="readMode bar" href="#"><i class="fa fa-sun-o"></i></a><a class="btn-sns-qr" href="javascript:" rel="external nofollow noreferrer"><i class="fa fa-telegram"></i></a></div><div id="wrapper" class="clearfix"><div id="body"><div class="main" id="main"><div id="cover"><img class="cover-img" src="/images/cover-day.webp" alt="cover-img" loading="lazy"><div class="cover-info"><img class="avatar" src="/images/logo.webp" width="100" alt="avatar" loading="lazy"><h1>托码特人</h1><h3>用代码摇滚这个世界</h3><h4>一个关注科技与人文的技术博客</h4><div class="cover-sns"><div class="btn btn-twitter"><a href="https://twitter.com/thomartisen" title="twitter" rel="external nofollow noopener" target="_blank"><i class="fa fa-twitter"></i></a></div><div class="btn btn-reddit"><a href="https://www.reddit.com/user/thomartisen" title="reddit" rel="external nofollow noopener" target="_blank"><i class="fa fa-reddit"></i></a></div><div class="btn btn-youtube"><a href="https://www.youtube.com/@thomartisen" title="youtube" rel="external nofollow noopener" target="_blank"><i class="fa fa-youtube"></i></a></div><div class="btn btn-medium"><a href="https://thomartisen.medium.com" title="medium" rel="external nofollow noopener" target="_blank"><i class="fa fa-medium"></i></a></div></div></div></div><div class="page-title"><ul><li><a href="/">最新</a></li><li class="active"><a href="/categories/prdeve" data-name="产品研发">产品研发</a></li><li><a href="/categories/ditech" data-name="数码科技">数码科技</a></li><li><a href="/categories/hulife" data-name="人文生活">人文生活</a></li><li><a href="/categories/groceries" data-name="杂货铺">杂货铺</a></li><li class="page-search"><form id="search" class="search-form"><input type="text" readonly id="local-search-input-tip" placeholder="读物检索~"> <button type="button" disabled class="search-form-submit"><i class="fa fa-search"></i></button></form></li></ul></div><div class="main-inner"><article class="post" itemscope itemtype="https://schema.org/BlogPosting"><div class="post-header"><div class="post-author clearfix" itemscope itemtype="https://schema.org/Person"><a class="avatar fleft" target="_blank" href="https://tangkunyin.com" rel="author noopener"><img width="48" src="/images/avatar.webp" alt="avatar" itemprop="image"></a><p><span class="label">作者</span> <a target="_blank" rel="noopener" href="https://tangkunyin.com" itemprop="url"><span itemprop="name">托码斯</span></a> <span itemprop="datePublished" content="2018-06-03T16:41:56.000+08:00">最后编辑于&nbsp;2018-06-03</span></p><p itemprop="description">一个写代码的「伪文人」</p></div><h1 class="post-title"><a target="_self" href="https://thomartisen.com/prdeve/pure-coding-layout-iOS/" itemprop="mainEntityOfPage"><span itemprop="headline">iOS布局工具类</span></a></h1><div class="post-meta" itemprop="wordCount">本文共计13316个字 | <span id="busuanzi_container_page_pv">你是第&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位到访读者</span></div></div><div class="post-content markdown-body" itemprop="articleBody"><h2 id="代码笔记"><a href="#代码笔记" class="headerlink" title="代码笔记"></a>代码笔记</h2><p>来自2015.4.25的笔记，iOS手码布局工具类</p><h3 id="头文件"><a href="#头文件" class="headerlink" title="头文件"></a>头文件</h3><pre><code class="hljs objectivec"><span class="hljs-meta">#import <span class="hljs-string">&lt;Foundation/Foundation.h&gt;</span></span>
 
-typedef enum
+<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">enum</span>
 &#123;
-    AlignmentCenter = 0,
+    AlignmentCenter = <span class="hljs-number">0</span>,
     AlignmentTop,
     AlignmentBottom,
     AlignmentLeft,
     AlignmentRight
 &#125; PlaceAlignmentType;
 
-@interface PositionTools : NSObject
+<span class="hljs-class"><span class="hljs-keyword">@interface</span> <span class="hljs-title">PositionTools</span> : <span class="hljs-title">NSObject</span></span>
 
-// 针对默认为竖屏的有效
-+ (void)placeView:(UIView*)subview atTheCenterOfTheView:(UIView*)container;
+<span class="hljs-comment">// 针对默认为竖屏的有效</span>
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheCenterOfTheView:(<span class="hljs-built_in">UIView</span>*)container;
 
-+ (void)placeView:(UIView*)subview atTheLeftMiddleOfTheView:(UIView*)container offset:(float)offset;
-+ (void)placeView:(UIView*)subview atTheRightMiddleOfTheView:(UIView*)container offset:(float)offset;
-+ (void)placeView:(UIView*)subview atTheTopMiddleOfTheView:(UIView*)container offset:(float)offset;
-+ (void)placeView:(UIView*)subview atTheBottomMiddleOfTheView:(UIView*)container offset:(float)offset;
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheLeftMiddleOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-type">float</span>)offset;
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheRightMiddleOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-type">float</span>)offset;
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheTopMiddleOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-type">float</span>)offset;
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheBottomMiddleOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-type">float</span>)offset;
 
-+ (void)placeView:(UIView*)subview atTheLeftTopOfTheView:(UIView*)container offset:(CGSize)offset;
-+ (void)placeView:(UIView*)subview atTheRightTopOfTheView:(UIView*)container offset:(CGSize)offset;
-+ (void)placeView:(UIView*)subview atTheLeftBottomOfTheView:(UIView*)container offset:(CGSize)offset;
-+ (void)placeView:(UIView*)subview atTheRightBottomOfTheView:(UIView*)container offset:(CGSize)offset;
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheLeftTopOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-built_in">CGSize</span>)offset;
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheRightTopOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-built_in">CGSize</span>)offset;
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheLeftBottomOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-built_in">CGSize</span>)offset;
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheRightBottomOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-built_in">CGSize</span>)offset;
 
-+ (void)placeView:(UIView *)sourceView toTheRightOfTheView:(UIView*)targetView span:(float)span;
-+ (void)placeView:(UIView *)sourceView toTheLeftOfTheView:(UIView*)targetView span:(float)span;
-+ (void)placeView:(UIView *)sourceView aboveTheView:(UIView*)targetView span:(float)span;
-+ (void)placeView:(UIView *)sourceView belowTheView:(UIView*)targetView span:(float)span;
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span> *)sourceView toTheRightOfTheView:(<span class="hljs-built_in">UIView</span>*)targetView span:(<span class="hljs-type">float</span>)span;
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span> *)sourceView toTheLeftOfTheView:(<span class="hljs-built_in">UIView</span>*)targetView span:(<span class="hljs-type">float</span>)span;
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span> *)sourceView aboveTheView:(<span class="hljs-built_in">UIView</span>*)targetView span:(<span class="hljs-type">float</span>)span;
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span> *)sourceView belowTheView:(<span class="hljs-built_in">UIView</span>*)targetView span:(<span class="hljs-type">float</span>)span;
 
-+ (void)placeView:(UIView *)sourceView toTheRightOfTheView:(UIView*)targetView span:(float)span alignmentType:(PlaceAlignmentType)alignmentType;
-+ (void)placeView:(UIView *)sourceView toTheLeftOfTheView:(UIView*)targetView span:(float)span alignmentType:(PlaceAlignmentType)alignmentType;
-+ (void)placeView:(UIView *)sourceView aboveTheView:(UIView*)targetView span:(float)span alignmentType:(PlaceAlignmentType)alignmentType;
-+ (void)placeView:(UIView *)sourceView belowTheView:(UIView*)targetView span:(float)span alignmentType:(PlaceAlignmentType)alignmentType;
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span> *)sourceView toTheRightOfTheView:(<span class="hljs-built_in">UIView</span>*)targetView span:(<span class="hljs-type">float</span>)span alignmentType:(PlaceAlignmentType)alignmentType;
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span> *)sourceView toTheLeftOfTheView:(<span class="hljs-built_in">UIView</span>*)targetView span:(<span class="hljs-type">float</span>)span alignmentType:(PlaceAlignmentType)alignmentType;
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span> *)sourceView aboveTheView:(<span class="hljs-built_in">UIView</span>*)targetView span:(<span class="hljs-type">float</span>)span alignmentType:(PlaceAlignmentType)alignmentType;
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span> *)sourceView belowTheView:(<span class="hljs-built_in">UIView</span>*)targetView span:(<span class="hljs-type">float</span>)span alignmentType:(PlaceAlignmentType)alignmentType;
 
-// 用来处理横屏的情况下，在屏幕没有旋转到横屏位置之前的情况
-+ (void)placeView:(UIView*)subview atTheCenterOfTheView:(UIView*)container needAlter:(BOOL)needAlter;
+<span class="hljs-comment">// 用来处理横屏的情况下，在屏幕没有旋转到横屏位置之前的情况</span>
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheCenterOfTheView:(<span class="hljs-built_in">UIView</span>*)container needAlter:(<span class="hljs-type">BOOL</span>)needAlter;
 
-+ (void)placeView:(UIView*)subview atTheLeftMiddleOfTheView:(UIView*)container offset:(float)offset needAlter:(BOOL)needAlter;
-+ (void)placeView:(UIView*)subview atTheRightMiddleOfTheView:(UIView*)container offset:(float)offset needAlter:(BOOL)needAlter;
-+ (void)placeView:(UIView*)subview atTheTopMiddleOfTheView:(UIView*)container offset:(float)offset needAlter:(BOOL)needAlter;
-+ (void)placeView:(UIView*)subview atTheBottomMiddleOfTheView:(UIView*)container offset:(float)offset needAlter:(BOOL)needAlter;
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheLeftMiddleOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-type">float</span>)offset needAlter:(<span class="hljs-type">BOOL</span>)needAlter;
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheRightMiddleOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-type">float</span>)offset needAlter:(<span class="hljs-type">BOOL</span>)needAlter;
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheTopMiddleOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-type">float</span>)offset needAlter:(<span class="hljs-type">BOOL</span>)needAlter;
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheBottomMiddleOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-type">float</span>)offset needAlter:(<span class="hljs-type">BOOL</span>)needAlter;
 
-+ (void)placeView:(UIView*)subview atTheRightTopOfTheView:(UIView*)container offset:(CGSize)offset needAlter:(BOOL)needAlter;
-+ (void)placeView:(UIView*)subview atTheLeftBottomOfTheView:(UIView*)container offset:(CGSize)offset needAlter:(BOOL)needAlter;
-+ (void)placeView:(UIView*)subview atTheRightBottomOfTheView:(UIView*)container offset:(CGSize)offset needAlter:(BOOL)needAlter;
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheRightTopOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-built_in">CGSize</span>)offset needAlter:(<span class="hljs-type">BOOL</span>)needAlter;
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheLeftBottomOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-built_in">CGSize</span>)offset needAlter:(<span class="hljs-type">BOOL</span>)needAlter;
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheRightBottomOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-built_in">CGSize</span>)offset needAlter:(<span class="hljs-type">BOOL</span>)needAlter;
 
-@end</code></pre><h3 id="实现文件"><a href="#实现文件" class="headerlink" title="实现文件"></a>实现文件</h3><pre><code class="hljs objective-c">#import &quot;PositionTools.h&quot;
+<span class="hljs-keyword">@end</span></code></pre><h3 id="实现文件"><a href="#实现文件" class="headerlink" title="实现文件"></a>实现文件</h3><pre><code class="hljs objectivec"><span class="hljs-meta">#import <span class="hljs-string">&quot;PositionTools.h&quot;</span></span>
 
-@implementation PositionTools
+<span class="hljs-class"><span class="hljs-keyword">@implementation</span> <span class="hljs-title">PositionTools</span></span>
 
-+ (void)placeView:(UIView*)subview atTheCenterOfTheView:(UIView*)container
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheCenterOfTheView:(<span class="hljs-built_in">UIView</span>*)container
 &#123;
-    return [self placeView:subview atTheCenterOfTheView:container needAlter:NO];
+    <span class="hljs-keyword">return</span> [<span class="hljs-keyword">self</span> placeView:subview atTheCenterOfTheView:container needAlter:<span class="hljs-literal">NO</span>];
 &#125;
 
-+ (void)placeView:(UIView*)subview atTheLeftMiddleOfTheView:(UIView*)container offset:(float)offset
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheLeftMiddleOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-type">float</span>)offset
 &#123;
-    return [self placeView:subview atTheLeftMiddleOfTheView:container offset:offset needAlter:NO];
+    <span class="hljs-keyword">return</span> [<span class="hljs-keyword">self</span> placeView:subview atTheLeftMiddleOfTheView:container offset:offset needAlter:<span class="hljs-literal">NO</span>];
 &#125;
 
-+ (void)placeView:(UIView*)subview atTheRightMiddleOfTheView:(UIView*)container offset:(float)offset
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheRightMiddleOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-type">float</span>)offset
 &#123;
-    return [self placeView:subview atTheRightMiddleOfTheView:container offset:offset needAlter:NO];
+    <span class="hljs-keyword">return</span> [<span class="hljs-keyword">self</span> placeView:subview atTheRightMiddleOfTheView:container offset:offset needAlter:<span class="hljs-literal">NO</span>];
 &#125;
 
-+ (void)placeView:(UIView*)subview atTheTopMiddleOfTheView:(UIView*)container offset:(float)offset
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheTopMiddleOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-type">float</span>)offset
 &#123;
-    return [self placeView:subview atTheTopMiddleOfTheView:container offset:offset needAlter:NO];
+    <span class="hljs-keyword">return</span> [<span class="hljs-keyword">self</span> placeView:subview atTheTopMiddleOfTheView:container offset:offset needAlter:<span class="hljs-literal">NO</span>];
 &#125;
 
-+ (void)placeView:(UIView*)subview atTheBottomMiddleOfTheView:(UIView*)container offset:(float)offset
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheBottomMiddleOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-type">float</span>)offset
 &#123;
-    return [self placeView:subview atTheBottomMiddleOfTheView:container offset:offset needAlter:NO];
+    <span class="hljs-keyword">return</span> [<span class="hljs-keyword">self</span> placeView:subview atTheBottomMiddleOfTheView:container offset:offset needAlter:<span class="hljs-literal">NO</span>];
 &#125;
 
-+ (void)placeView:(UIView*)subview atTheRightTopOfTheView:(UIView*)container offset:(CGSize)offset
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheRightTopOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-built_in">CGSize</span>)offset
 &#123;
-    return [self placeView:subview atTheRightTopOfTheView:container offset:offset needAlter:NO];
+    <span class="hljs-keyword">return</span> [<span class="hljs-keyword">self</span> placeView:subview atTheRightTopOfTheView:container offset:offset needAlter:<span class="hljs-literal">NO</span>];
 &#125;
 
-+ (void)placeView:(UIView*)subview atTheLeftBottomOfTheView:(UIView*)container offset:(CGSize)offset
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheLeftBottomOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-built_in">CGSize</span>)offset
 &#123;
-    return [self placeView:subview atTheLeftBottomOfTheView:container offset:offset needAlter:NO];
+    <span class="hljs-keyword">return</span> [<span class="hljs-keyword">self</span> placeView:subview atTheLeftBottomOfTheView:container offset:offset needAlter:<span class="hljs-literal">NO</span>];
 &#125;
 
-+ (void)placeView:(UIView*)subview atTheRightBottomOfTheView:(UIView*)container offset:(CGSize)offset
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheRightBottomOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-built_in">CGSize</span>)offset
 &#123;
-    return [self placeView:subview atTheRightBottomOfTheView:container offset:offset needAlter:NO];
+    <span class="hljs-keyword">return</span> [<span class="hljs-keyword">self</span> placeView:subview atTheRightBottomOfTheView:container offset:offset needAlter:<span class="hljs-literal">NO</span>];
 &#125;
 
-+ (void)placeView:(UIView*)subview atTheCenterOfTheView:(UIView*)container needAlter:(BOOL)needAlter
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheCenterOfTheView:(<span class="hljs-built_in">UIView</span>*)container needAlter:(<span class="hljs-type">BOOL</span>)needAlter
 &#123;
     [container addSubview:subview];
     
-    if (needAlter) &#123;
-        subview.center = CGPointMake(container.bounds.size.height/2, container.bounds.size.width/2);
-    &#125; else &#123;
-        subview.center = CGPointMake(container.bounds.size.width/2, container.bounds.size.height/2);
+    <span class="hljs-keyword">if</span> (needAlter) &#123;
+        subview.center = <span class="hljs-built_in">CGPointMake</span>(container.bounds.size.height/<span class="hljs-number">2</span>, container.bounds.size.width/<span class="hljs-number">2</span>);
+    &#125; <span class="hljs-keyword">else</span> &#123;
+        subview.center = <span class="hljs-built_in">CGPointMake</span>(container.bounds.size.width/<span class="hljs-number">2</span>, container.bounds.size.height/<span class="hljs-number">2</span>);
     &#125;
 &#125;
 
-+ (void)placeView:(UIView*)subview atTheLeftMiddleOfTheView:(UIView*)container offset:(float)offset needAlter:(BOOL)needAlter
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheLeftMiddleOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-type">float</span>)offset needAlter:(<span class="hljs-type">BOOL</span>)needAlter
 &#123;
     [container addSubview:subview];
     
-    if (needAlter) &#123;
-        subview.center = CGPointMake(offset + subview.frame.size.width/2, container.bounds.size.width/2);
-    &#125; else &#123;
-        subview.center = CGPointMake(offset + subview.frame.size.width/2, container.bounds.size.height/2);
+    <span class="hljs-keyword">if</span> (needAlter) &#123;
+        subview.center = <span class="hljs-built_in">CGPointMake</span>(offset + subview.frame.size.width/<span class="hljs-number">2</span>, container.bounds.size.width/<span class="hljs-number">2</span>);
+    &#125; <span class="hljs-keyword">else</span> &#123;
+        subview.center = <span class="hljs-built_in">CGPointMake</span>(offset + subview.frame.size.width/<span class="hljs-number">2</span>, container.bounds.size.height/<span class="hljs-number">2</span>);
     &#125;
 &#125;
 
-+ (void)placeView:(UIView*)subview atTheRightMiddleOfTheView:(UIView*)container offset:(float)offset needAlter:(BOOL)needAlter
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheRightMiddleOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-type">float</span>)offset needAlter:(<span class="hljs-type">BOOL</span>)needAlter
 &#123;
     [container addSubview:subview];
     
-    if (needAlter) &#123;
-        subview.center = CGPointMake(container.bounds.size.height - (offset + subview.frame.size.width/2), container.bounds.size.width/2);
-    &#125; else &#123;
-        subview.center = CGPointMake(container.bounds.size.width - (offset + subview.frame.size.width/2), container.bounds.size.height/2);
+    <span class="hljs-keyword">if</span> (needAlter) &#123;
+        subview.center = <span class="hljs-built_in">CGPointMake</span>(container.bounds.size.height - (offset + subview.frame.size.width/<span class="hljs-number">2</span>), container.bounds.size.width/<span class="hljs-number">2</span>);
+    &#125; <span class="hljs-keyword">else</span> &#123;
+        subview.center = <span class="hljs-built_in">CGPointMake</span>(container.bounds.size.width - (offset + subview.frame.size.width/<span class="hljs-number">2</span>), container.bounds.size.height/<span class="hljs-number">2</span>);
     &#125;
 &#125;
 
-+ (void)placeView:(UIView*)subview atTheTopMiddleOfTheView:(UIView*)container offset:(float)offset needAlter:(BOOL)needAlter
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheTopMiddleOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-type">float</span>)offset needAlter:(<span class="hljs-type">BOOL</span>)needAlter
 &#123;
     [container addSubview:subview];
     
-    if (needAlter) &#123;
-        subview.center = CGPointMake(container.bounds.size.height/2, offset + subview.frame.size.height/2);
-    &#125; else &#123;
-        subview.center = CGPointMake(container.bounds.size.width/2, offset + subview.frame.size.height/2);
+    <span class="hljs-keyword">if</span> (needAlter) &#123;
+        subview.center = <span class="hljs-built_in">CGPointMake</span>(container.bounds.size.height/<span class="hljs-number">2</span>, offset + subview.frame.size.height/<span class="hljs-number">2</span>);
+    &#125; <span class="hljs-keyword">else</span> &#123;
+        subview.center = <span class="hljs-built_in">CGPointMake</span>(container.bounds.size.width/<span class="hljs-number">2</span>, offset + subview.frame.size.height/<span class="hljs-number">2</span>);
     &#125;
 &#125;
 
-+ (void)placeView:(UIView*)subview atTheBottomMiddleOfTheView:(UIView*)container offset:(float)offset needAlter:(BOOL)needAlter
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheBottomMiddleOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-type">float</span>)offset needAlter:(<span class="hljs-type">BOOL</span>)needAlter
 &#123;
     [container addSubview:subview];
     
-    if (needAlter) &#123;
-        subview.center = CGPointMake(container.bounds.size.height/2,  container.bounds.size.width - (offset + subview.frame.size.height/2));
-    &#125; else &#123;
-        subview.center = CGPointMake(container.bounds.size.width/2,  container.bounds.size.height - (offset + subview.frame.size.height/2));
+    <span class="hljs-keyword">if</span> (needAlter) &#123;
+        subview.center = <span class="hljs-built_in">CGPointMake</span>(container.bounds.size.height/<span class="hljs-number">2</span>,  container.bounds.size.width - (offset + subview.frame.size.height/<span class="hljs-number">2</span>));
+    &#125; <span class="hljs-keyword">else</span> &#123;
+        subview.center = <span class="hljs-built_in">CGPointMake</span>(container.bounds.size.width/<span class="hljs-number">2</span>,  container.bounds.size.height - (offset + subview.frame.size.height/<span class="hljs-number">2</span>));
     &#125;
 &#125;
 
-+ (void)placeView:(UIView*)subview atTheLeftTopOfTheView:(UIView*)container offset:(CGSize)offset
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheLeftTopOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-built_in">CGSize</span>)offset
 &#123;
     [container addSubview:subview];
     
-    subview.center = CGPointMake(offset.width + subview.frame.size.width/2,
-                                 offset.height + subview.frame.size.height/2);
+    subview.center = <span class="hljs-built_in">CGPointMake</span>(offset.width + subview.frame.size.width/<span class="hljs-number">2</span>,
+                                 offset.height + subview.frame.size.height/<span class="hljs-number">2</span>);
 &#125;
 
-+ (void)placeView:(UIView*)subview atTheRightTopOfTheView:(UIView*)container offset:(CGSize)offset needAlter:(BOOL)needAlter
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheRightTopOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-built_in">CGSize</span>)offset needAlter:(<span class="hljs-type">BOOL</span>)needAlter
 &#123;
     [container addSubview:subview];
     
-    if (needAlter) &#123;
-        subview.center = CGPointMake(container.bounds.size.height - (offset.width + subview.frame.size.width/2),
-                                     offset.height + subview.frame.size.height/2);
-    &#125; else &#123;
-        subview.center = CGPointMake(container.bounds.size.width - (offset.width + subview.frame.size.width/2),
-                                     offset.height + subview.frame.size.height/2);
+    <span class="hljs-keyword">if</span> (needAlter) &#123;
+        subview.center = <span class="hljs-built_in">CGPointMake</span>(container.bounds.size.height - (offset.width + subview.frame.size.width/<span class="hljs-number">2</span>),
+                                     offset.height + subview.frame.size.height/<span class="hljs-number">2</span>);
+    &#125; <span class="hljs-keyword">else</span> &#123;
+        subview.center = <span class="hljs-built_in">CGPointMake</span>(container.bounds.size.width - (offset.width + subview.frame.size.width/<span class="hljs-number">2</span>),
+                                     offset.height + subview.frame.size.height/<span class="hljs-number">2</span>);
     &#125;
 &#125;
 
-+ (void)placeView:(UIView*)subview atTheLeftBottomOfTheView:(UIView*)container offset:(CGSize)offset needAlter:(BOOL)needAlter
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheLeftBottomOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-built_in">CGSize</span>)offset needAlter:(<span class="hljs-type">BOOL</span>)needAlter
 &#123;
     [container addSubview:subview];
     
-    if (needAlter) &#123;
-        subview.center = CGPointMake(offset.width + subview.frame.size.width/2,
-                                     container.bounds.size.width - (offset.height + subview.frame.size.height/2));
-    &#125; else &#123;
-        subview.center = CGPointMake(offset.width + subview.frame.size.width/2,
-                                     container.bounds.size.height - (offset.height + subview.frame.size.height/2));
+    <span class="hljs-keyword">if</span> (needAlter) &#123;
+        subview.center = <span class="hljs-built_in">CGPointMake</span>(offset.width + subview.frame.size.width/<span class="hljs-number">2</span>,
+                                     container.bounds.size.width - (offset.height + subview.frame.size.height/<span class="hljs-number">2</span>));
+    &#125; <span class="hljs-keyword">else</span> &#123;
+        subview.center = <span class="hljs-built_in">CGPointMake</span>(offset.width + subview.frame.size.width/<span class="hljs-number">2</span>,
+                                     container.bounds.size.height - (offset.height + subview.frame.size.height/<span class="hljs-number">2</span>));
     &#125;
 &#125;
 
-+ (void)placeView:(UIView*)subview atTheRightBottomOfTheView:(UIView*)container offset:(CGSize)offset needAlter:(BOOL)needAlter
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)subview atTheRightBottomOfTheView:(<span class="hljs-built_in">UIView</span>*)container offset:(<span class="hljs-built_in">CGSize</span>)offset needAlter:(<span class="hljs-type">BOOL</span>)needAlter
 &#123;
     [container addSubview:subview];
     
-    if (needAlter) &#123;
-        subview.center = CGPointMake(container.bounds.size.height - (offset.width + subview.frame.size.width/2),
-                                     container.bounds.size.width - (offset.height + subview.frame.size.height/2));
-    &#125; else &#123;
-        subview.center = CGPointMake(container.bounds.size.width - (offset.width + subview.frame.size.width/2),
-                                     container.bounds.size.height - (offset.height + subview.frame.size.height/2));
+    <span class="hljs-keyword">if</span> (needAlter) &#123;
+        subview.center = <span class="hljs-built_in">CGPointMake</span>(container.bounds.size.height - (offset.width + subview.frame.size.width/<span class="hljs-number">2</span>),
+                                     container.bounds.size.width - (offset.height + subview.frame.size.height/<span class="hljs-number">2</span>));
+    &#125; <span class="hljs-keyword">else</span> &#123;
+        subview.center = <span class="hljs-built_in">CGPointMake</span>(container.bounds.size.width - (offset.width + subview.frame.size.width/<span class="hljs-number">2</span>),
+                                     container.bounds.size.height - (offset.height + subview.frame.size.height/<span class="hljs-number">2</span>));
     &#125;
 &#125;
 
-+ (void)placeView:(UIView *)sourceView toTheRightOfTheView:(UIView*)targetView span:(float)span
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span> *)sourceView toTheRightOfTheView:(<span class="hljs-built_in">UIView</span>*)targetView span:(<span class="hljs-type">float</span>)span
 &#123;
-    [self placeView:sourceView toTheRightOfTheView:targetView span:span alignmentType:AlignmentCenter];
+    [<span class="hljs-keyword">self</span> placeView:sourceView toTheRightOfTheView:targetView span:span alignmentType:AlignmentCenter];
 &#125;
 
-+ (void)placeView:(UIView *)sourceView toTheLeftOfTheView:(UIView*)targetView span:(float)span
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span> *)sourceView toTheLeftOfTheView:(<span class="hljs-built_in">UIView</span>*)targetView span:(<span class="hljs-type">float</span>)span
 &#123;
-    [self placeView:sourceView toTheLeftOfTheView:targetView span:span alignmentType:AlignmentCenter];
+    [<span class="hljs-keyword">self</span> placeView:sourceView toTheLeftOfTheView:targetView span:span alignmentType:AlignmentCenter];
 &#125;
 
-+ (void)placeView:(UIView *)sourceView aboveTheView:(UIView*)targetView span:(float)span
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span> *)sourceView aboveTheView:(<span class="hljs-built_in">UIView</span>*)targetView span:(<span class="hljs-type">float</span>)span
 &#123;
-    [self placeView:sourceView aboveTheView:targetView span:span alignmentType:AlignmentCenter];
+    [<span class="hljs-keyword">self</span> placeView:sourceView aboveTheView:targetView span:span alignmentType:AlignmentCenter];
 &#125;
 
-+ (void)placeView:(UIView *)sourceView belowTheView:(UIView*)targetView span:(float)span
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span> *)sourceView belowTheView:(<span class="hljs-built_in">UIView</span>*)targetView span:(<span class="hljs-type">float</span>)span
 &#123;
-    [self placeView:sourceView belowTheView:targetView span:span alignmentType:AlignmentCenter];
+    [<span class="hljs-keyword">self</span> placeView:sourceView belowTheView:targetView span:span alignmentType:AlignmentCenter];
 &#125;
 
-+ (void)placeView:(UIView*)sourceView toTheRightOfTheView:(UIView*)targetView span:(float)span alignmentType:(PlaceAlignmentType)alignmentType
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)sourceView toTheRightOfTheView:(<span class="hljs-built_in">UIView</span>*)targetView span:(<span class="hljs-type">float</span>)span alignmentType:(PlaceAlignmentType)alignmentType
 &#123;
     [[targetView superview] addSubview:sourceView];
-    sourceView.center = CGPointMake(targetView.frame.origin.x + targetView.frame.size.width + (span + sourceView.frame.size.width/2),
+    sourceView.center = <span class="hljs-built_in">CGPointMake</span>(targetView.frame.origin.x + targetView.frame.size.width + (span + sourceView.frame.size.width/<span class="hljs-number">2</span>),
                                     targetView.center.y);
-    [self alignView:sourceView targetView:targetView alignmentType:alignmentType];
+    [<span class="hljs-keyword">self</span> alignView:sourceView targetView:targetView alignmentType:alignmentType];
 &#125;
 
-+ (void)placeView:(UIView*)sourceView toTheLeftOfTheView:(UIView*)targetView span:(float)span alignmentType:(PlaceAlignmentType)alignmentType
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)sourceView toTheLeftOfTheView:(<span class="hljs-built_in">UIView</span>*)targetView span:(<span class="hljs-type">float</span>)span alignmentType:(PlaceAlignmentType)alignmentType
 &#123;
     [[targetView superview] addSubview:sourceView];
-    sourceView.center = CGPointMake(targetView.frame.origin.x - (span + sourceView.frame.size.width/2),
+    sourceView.center = <span class="hljs-built_in">CGPointMake</span>(targetView.frame.origin.x - (span + sourceView.frame.size.width/<span class="hljs-number">2</span>),
                                     targetView.center.y);
-    [self alignView:sourceView targetView:targetView alignmentType:alignmentType];
+    [<span class="hljs-keyword">self</span> alignView:sourceView targetView:targetView alignmentType:alignmentType];
 &#125;
 
-+ (void)placeView:(UIView*)sourceView aboveTheView:(UIView*)targetView span:(float)span alignmentType:(PlaceAlignmentType)alignmentType
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)sourceView aboveTheView:(<span class="hljs-built_in">UIView</span>*)targetView span:(<span class="hljs-type">float</span>)span alignmentType:(PlaceAlignmentType)alignmentType
 &#123;
     [[targetView superview] addSubview:sourceView];
-    sourceView.center = CGPointMake(targetView.center.x,
-                                    targetView.frame.origin.y - (span + sourceView.frame.size.height/2));
-    [self alignView:sourceView targetView:targetView alignmentType:alignmentType];
+    sourceView.center = <span class="hljs-built_in">CGPointMake</span>(targetView.center.x,
+                                    targetView.frame.origin.y - (span + sourceView.frame.size.height/<span class="hljs-number">2</span>));
+    [<span class="hljs-keyword">self</span> alignView:sourceView targetView:targetView alignmentType:alignmentType];
 &#125;
 
-+ (void)placeView:(UIView*)sourceView belowTheView:(UIView*)targetView span:(float)span alignmentType:(PlaceAlignmentType)alignmentType
++ (<span class="hljs-type">void</span>)placeView:(<span class="hljs-built_in">UIView</span>*)sourceView belowTheView:(<span class="hljs-built_in">UIView</span>*)targetView span:(<span class="hljs-type">float</span>)span alignmentType:(PlaceAlignmentType)alignmentType
 &#123;
     [[targetView superview] addSubview:sourceView];
-    sourceView.center = CGPointMake(targetView.center.x,
-                                    targetView.frame.origin.y + targetView.frame.size.height + (span + sourceView.frame.size.height/2));
-    [self alignView:sourceView targetView:targetView alignmentType:alignmentType];
+    sourceView.center = <span class="hljs-built_in">CGPointMake</span>(targetView.center.x,
+                                    targetView.frame.origin.y + targetView.frame.size.height + (span + sourceView.frame.size.height/<span class="hljs-number">2</span>));
+    [<span class="hljs-keyword">self</span> alignView:sourceView targetView:targetView alignmentType:alignmentType];
 &#125;
 
-+ (void)alignView:(UIView*)sourceView targetView:(UIView*)targetView alignmentType:(PlaceAlignmentType)alignmentType
++ (<span class="hljs-type">void</span>)alignView:(<span class="hljs-built_in">UIView</span>*)sourceView targetView:(<span class="hljs-built_in">UIView</span>*)targetView alignmentType:(PlaceAlignmentType)alignmentType
 &#123;
-    if (AlignmentTop == alignmentType) &#123;
-        sourceView.center = CGPointMake(sourceView.center.x,
-                                        targetView.frame.origin.y + sourceView.frame.size.height/2);
-    &#125; else if (AlignmentBottom == alignmentType) &#123;
-        sourceView.center = CGPointMake(sourceView.center.x,
-                                        targetView.frame.origin.y + targetView.frame.size.height - sourceView.frame.size.height/2);
-    &#125; else if (AlignmentLeft == alignmentType) &#123;
-        sourceView.center = CGPointMake(targetView.frame.origin.x + sourceView.frame.size.width/2,
+    <span class="hljs-keyword">if</span> (AlignmentTop == alignmentType) &#123;
+        sourceView.center = <span class="hljs-built_in">CGPointMake</span>(sourceView.center.x,
+                                        targetView.frame.origin.y + sourceView.frame.size.height/<span class="hljs-number">2</span>);
+    &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (AlignmentBottom == alignmentType) &#123;
+        sourceView.center = <span class="hljs-built_in">CGPointMake</span>(sourceView.center.x,
+                                        targetView.frame.origin.y + targetView.frame.size.height - sourceView.frame.size.height/<span class="hljs-number">2</span>);
+    &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (AlignmentLeft == alignmentType) &#123;
+        sourceView.center = <span class="hljs-built_in">CGPointMake</span>(targetView.frame.origin.x + sourceView.frame.size.width/<span class="hljs-number">2</span>,
                                         sourceView.center.y);
-    &#125; else if (AlignmentRight == alignmentType) &#123;
-        sourceView.center = CGPointMake(targetView.frame.origin.x + targetView.frame.size.width - sourceView.frame.size.width/2,
+    &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (AlignmentRight == alignmentType) &#123;
+        sourceView.center = <span class="hljs-built_in">CGPointMake</span>(targetView.frame.origin.x + targetView.frame.size.width - sourceView.frame.size.width/<span class="hljs-number">2</span>,
                                         sourceView.center.y);
     &#125;
 &#125;
-@end</code></pre></div><div class="post-tags">标签： <a href="/tags/proglangs/">编程语言</a> <a href="/tags/apple/">苹果</a></div></article><p style="text-align:center">请注意: 本文所述内容及观点仅代表个人看法，由于知识水平有限，行文难免出现差错，欢迎留言交流。谢谢！</p><div id="disqus_thread"></div><script>if("https://thomartisen.com"===location.origin){var disqus_config=function(){this.page.url=location.href,this.page.identifier=location.pathname};!function(){var t=document,e=t.createElement("script");e.src="https://thomartisen-com.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()}</script><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener external nofollow noreferrer" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div></div></div><footer class="footer"><div class="footer-inner" style="text-align:center"><p>本站已建立&nbsp;<a href="/about/#我的那些青葱岁月" id="siteBuildingTime"></a>&nbsp;天， <span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span><br>©2017-<span id="cpYear"></span> 基于&nbsp;<a href="http://hexo.io" target="_blank" rel="external nofollow noopener" title="Hexo">Hexo</a> ，主题采用&nbsp;&nbsp;<a href="https://github.com/tangkunyin/hexo-theme-jsimple" target="_blank" rel="external nofollow noopener" title="JSimple theme">JSimple</a> ，作者&nbsp;<a href="https://tangkunyin.com" target="_blank" rel="external author noopener" title="author">托码斯</a> ，托管于 <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener" title="GitHub Pages">GitHub Pages</a> ，<a href="https://thomartisen.com/sitemap.xml" title="网站地图" rel="alternate" type="application/xml">网站地图</a></p></div></footer></div><div class="popup search-popup local-search-popup"><div class="local-search-header clearfix"><span class="search-icon"><i class="fa fa-search"></i></span><span class="popup-btn-close"><i class="fa fa-times-circle"></i></span><div class="local-search-input-wrapper"><input id="local-search-input" spellcheck="true" type="text" autocomplete="off" placeholder="请输入查询关键词"></div></div><div id="local-search-result"></div></div><div class="fixed-btn"><a class="btn-gotop" href="javascript:" rel="external nofollow noreferrer"><i class="fa fa-angle-up"></i></a></div><script async src="/js/SimpleCore.min.js"></script><script defer src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script async id="dsq-count-scr" src="//thomartisen-com.disqus.com/count.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-EETPY7KE74"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-EETPY7KE74")</script></body></html>
+<span class="hljs-keyword">@end</span></code></pre></div><div class="post-tags">标签： <a href="/tags/proglangs/">编程语言</a> <a href="/tags/apple/">苹果</a></div></article><p style="text-align:center">请注意: 本文所述内容及观点仅代表个人看法，由于知识水平有限，行文难免出现差错，欢迎留言交流。谢谢！</p><div id="disqus_thread"></div><script>if("https://thomartisen.com"===location.origin){var disqus_config=function(){this.page.url=location.href,this.page.identifier=location.pathname};!function(){var t=document,e=t.createElement("script");e.src="https://thomartisen-com.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()}</script><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener external nofollow noreferrer" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div></div></div><footer class="footer"><div class="footer-inner" style="text-align:center"><p>本站已建立&nbsp;<a href="/about/#我的那些青葱岁月" id="siteBuildingTime"></a>&nbsp;天， <span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span><br>©2017-<span id="cpYear"></span> 基于&nbsp;<a href="http://hexo.io" target="_blank" rel="external nofollow noopener" title="Hexo">Hexo</a> ，主题采用&nbsp;&nbsp;<a href="https://github.com/tangkunyin/hexo-theme-jsimple" target="_blank" rel="external nofollow noopener" title="JSimple theme">JSimple</a> ，作者&nbsp;<a href="https://tangkunyin.com" target="_blank" rel="external author noopener" title="author">托码斯</a> ，托管于 <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener" title="GitHub Pages">GitHub Pages</a> ，<a href="https://thomartisen.com/sitemap.xml" title="网站地图" rel="alternate" type="application/xml">网站地图</a></p></div></footer></div><div class="popup search-popup local-search-popup"><div class="local-search-header clearfix"><span class="search-icon"><i class="fa fa-search"></i></span><span class="popup-btn-close"><i class="fa fa-times-circle"></i></span><div class="local-search-input-wrapper"><input id="local-search-input" spellcheck="true" type="text" autocomplete="off" placeholder="请输入查询关键词"></div></div><div id="local-search-result"></div></div><div class="fixed-btn"><a class="btn-gotop" href="javascript:" rel="external nofollow noreferrer"><i class="fa fa-angle-up"></i></a></div><script async src="/js/SimpleCore.min.js"></script><script defer src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script async id="dsq-count-scr" src="//thomartisen-com.disqus.com/count.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-EETPY7KE74"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-EETPY7KE74")</script></body></html>

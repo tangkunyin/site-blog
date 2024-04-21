@@ -2,6 +2,123 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://thomartisen.com/prdeve/pure-coding-layout-iOS/</loc>
+    
+    <lastmod>2024-04-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/prdeve/random-objectiveC/</loc>
+    
+    <lastmod>2024-04-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/prdeve/url-encoding-iOS/</loc>
+    
+    <lastmod>2024-04-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/prdeve/property-in-action-iOS/</loc>
+    
+    <lastmod>2024-04-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/prdeve/three-unary-iOS/</loc>
+    
+    <lastmod>2024-04-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/prdeve/property-and-memberVar-in-iOS/</loc>
+    
+    <lastmod>2024-04-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/prdeve/pushViewController-change/</loc>
+    
+    <lastmod>2024-04-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/prdeve/iOS-Pointer/</loc>
+    
+    <lastmod>2024-04-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/prdeve/instancetype-iOS/</loc>
+    
+    <lastmod>2024-04-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/prdeve/NSScanner/</loc>
+    
+    <lastmod>2024-04-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/prdeve/interfaceOrientation-iOS/</loc>
+    
+    <lastmod>2024-04-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/prdeve/performSelector-warning-fix/</loc>
+    
+    <lastmod>2024-04-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/prdeve/create-rn-in-better-way/</loc>
+    
+    <lastmod>2024-04-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://thomartisen.com/prdeve/redux-study/</loc>
     
     <lastmod>2024-04-21</lastmod>
@@ -29,25 +146,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prdeve/create-rn-in-better-way/</loc>
-    
-    <lastmod>2024-04-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://thomartisen.com/prdeve/about-git/</loc>
-    
-    <lastmod>2024-04-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/prdeve/pushViewController-change/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -110,25 +209,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prdeve/three-unary-iOS/</loc>
-    
-    <lastmod>2024-04-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://thomartisen.com/ditech/nodeppt/</loc>
-    
-    <lastmod>2024-04-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/prdeve/property-and-memberVar-in-iOS/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -156,15 +237,6 @@
   
   <url>
     <loc>https://thomartisen.com/ditech/flac-music/</loc>
-    
-    <lastmod>2024-04-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/prdeve/interfaceOrientation-iOS/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -317,33 +389,6 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prdeve/instancetype-iOS/</loc>
-    
-    <lastmod>2024-04-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/prdeve/pure-coding-layout-iOS/</loc>
-    
-    <lastmod>2024-04-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/prdeve/iOS-Pointer/</loc>
-    
-    <lastmod>2024-04-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://thomartisen.com/prdeve/ipa-command-packaging/</loc>
     
     <lastmod>2024-04-21</lastmod>
@@ -353,34 +398,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prdeve/property-in-action-iOS/</loc>
-    
-    <lastmod>2024-04-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/prdeve/random-objectiveC/</loc>
-    
-    <lastmod>2024-04-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://thomartisen.com/prdeve/data-pass-in-iOS/</loc>
-    
-    <lastmod>2024-04-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/prdeve/url-encoding-iOS/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -444,24 +462,6 @@
   
   <url>
     <loc>https://thomartisen.com/prdeve/what-is-the-npx/</loc>
-    
-    <lastmod>2024-04-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/prdeve/NSScanner/</loc>
-    
-    <lastmod>2024-04-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/prdeve/performSelector-warning-fix/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
