@@ -2,9 +2,90 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://thomartisen.com/ditech/piano-learning-part1/</loc>
+    
+    <lastmod>2024-04-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/ditech/niz-keybord/</loc>
+    
+    <lastmod>2024-04-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/hulife/car-first-maintenance/</loc>
+    
+    <lastmod>2024-04-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/prdeve/practice-in-microfrontends/</loc>
+    
+    <lastmod>2024-04-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/prdeve/reinstall-mysql/</loc>
+    
+    <lastmod>2024-04-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/prdeve/thinking-about-work/</loc>
+    
+    <lastmod>2024-04-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/prdeve/debug-nodets-in-vscode/</loc>
+    
+    <lastmod>2024-04-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/prdeve/about-git/</loc>
+    
+    <lastmod>2024-04-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/prdeve/codereview-explore/</loc>
+    
+    <lastmod>2024-04-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://thomartisen.com/prdeve/docker-usage/</loc>
     
-    <lastmod>2024-04-13</lastmod>
+    <lastmod>2024-04-21</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -13,7 +94,7 @@
   <url>
     <loc>https://thomartisen.com/groceries/permalink-optimize-hexo/</loc>
     
-    <lastmod>2024-04-13</lastmod>
+    <lastmod>2024-04-21</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -110,15 +191,6 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prdeve/practice-in-microfrontends/</loc>
-    
-    <lastmod>2024-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://thomartisen.com/prdeve/reduce-array-to-object/</loc>
     
     <lastmod>2024-04-01</lastmod>
@@ -182,25 +254,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/ditech/niz-keybord/</loc>
-    
-    <lastmod>2024-03-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://thomartisen.com/ditech/flac-music/</loc>
-    
-    <lastmod>2024-03-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/ditech/piano-learning-part1/</loc>
     
     <lastmod>2024-03-26</lastmod>
     
@@ -219,15 +273,6 @@
   
   <url>
     <loc>https://thomartisen.com/prdeve/vue-study-notes/</loc>
-    
-    <lastmod>2024-03-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/prdeve/debug-nodets-in-vscode/</loc>
     
     <lastmod>2024-03-26</lastmod>
     
@@ -506,15 +551,6 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prdeve/codereview-explore/</loc>
-    
-    <lastmod>2024-03-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://thomartisen.com/prdeve/AES_CBC-iOS/</loc>
     
     <lastmod>2024-03-26</lastmod>
@@ -623,15 +659,6 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/hulife/car-first-maintenance/</loc>
-    
-    <lastmod>2024-03-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://thomartisen.com/prdeve/cross-platform-desktop/</loc>
     
     <lastmod>2024-03-25</lastmod>
@@ -650,15 +677,6 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prdeve/reinstall-mysql/</loc>
-    
-    <lastmod>2024-03-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://thomartisen.com/prdeve/pushViewController-change/</loc>
     
     <lastmod>2024-03-25</lastmod>
@@ -668,25 +686,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prdeve/thinking-about-work/</loc>
-    
-    <lastmod>2024-03-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://thomartisen.com/prdeve/create-rn-in-better-way/</loc>
-    
-    <lastmod>2024-03-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/prdeve/about-git/</loc>
     
     <lastmod>2024-03-25</lastmod>
     
