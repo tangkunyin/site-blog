@@ -1,4 +1,3 @@
-https://thomartisen.com/prdeve/pure-coding-layout-iOS/
 https://thomartisen.com/prdeve/random-objectiveC/
 https://thomartisen.com/prdeve/url-encoding-iOS/
 https://thomartisen.com/prdeve/property-in-action-iOS/
@@ -63,7 +62,6 @@ https://thomartisen.com/prdeve/typedoc-notes/
 https://thomartisen.com/prdeve/ts-study-part1/
 https://thomartisen.com/prdeve/ts-study-part2/
 https://thomartisen.com/prdeve/exclusiveTouch-iOS/
-https://thomartisen.com/prdeve/vue-study-notes/
 https://thomartisen.com/ditech/piano-learning-part1/
 https://thomartisen.com/ditech/niz-keybord/
 https://thomartisen.com/hulife/car-first-maintenance/
