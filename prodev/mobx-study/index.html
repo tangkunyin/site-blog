@@ -1,0 +1,87 @@
+<!DOCTYPE HTML><html class="no-js" lang="zh-Hans"><head><!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=https://thomartisen.com/warn.html"><![endif]--><meta charset="utf-8"><meta name="renderer" content="webkit"><meta name="applicable-device" content="pc,mobile"><meta name="format-detection" content="telephone=no,email=no"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="author" content="托码斯(https://thomartisen.com)"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="托码特人(Thomartisen)"><title>mobx使用详解及最佳实践 | 托码特人(Thomartisen)</title><meta name="keywords" content="JavaScript, MobX"><meta name="description" content="来自2018.1.22的笔记：Mobx使用详解及最佳实践（摘录）"><meta property="og:type" content="article"><meta property="og:title" content="mobx使用详解及最佳实践 | 托码特人(Thomartisen)"><meta property="og:description" content="来自2018.1.22的笔记：Mobx使用详解及最佳实践（摘录）"><meta property="og:url" content="https://thomartisen.com"><meta property="og:site_name" content="托码特人(Thomartisen)"><link rel="dns-prefetch" href="https://thomartisen.com"><link rel="preload" href="https://thomartisen.com/css/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://thomartisen.com/css/JSimple.min.css" as="style"><link rel="preload" href="https://thomartisen.com/js/SimpleCore.min.js" as="script"><link rel="preload" href="https://thomartisen.com/images/logo.webp" as="image" type="image/webp"><link rel="preload" href="https://thomartisen.com/images/cover-day.webp" as="image" type="image/webp"><link rel="preconnect" href="https://thomartisen-com.disqus.com"><link rel="preconnect" href="https://c.disquscdn.com"><link rel="stylesheet" href="/css/JSimple.min.css"><link rel="icon" type="image/svg+xml" href="https://thomartisen.com/images/favicon.svg"><link rel="alternate icon" type="image/png" href="https://thomartisen.com/images/favicon.png"><link rel="alternate" type="application/xml" title="Site Map" href="https://thomartisen.com/sitemap.xml"><link rel="canonical" href="https://thomartisen.com/prodev/mobx-study/"><style id="highl_css"></style><script>(function() {
+        let jsi_config = {
+            isPost: 'true',
+            buildingTime: '01/20/2018',
+            highlightTheme: 'atom-one',
+            snsQRCode: '/images/sns-qrcode.webp',
+            donateImg: '',
+            readMode: 'day',
+            localSearch: { dbPath: '' }
+        };
+        
+            jsi_config.localSearch = {
+                dbPath: '/search.json',
+                trigger: 'auto',
+                topN: '1',
+                unescape: 'false'
+            }
+        
+        window.jsi_config = jsi_config;
+    })()</script><script>!function(t,e,n,c,r,s,a){t[n]=t[n]||function(){(t[n].q=t[n].q||[]).push(arguments)},(s=e.createElement(c)).async=1,s.src="https://www.clarity.ms/tag/lzvhfsbhmv?ref=bwt",(a=e.getElementsByTagName(c)[0]).parentNode.insertBefore(s,a)}(window,document,"clarity","script")</script><meta name="generator" content="Hexo 7.1.1"></head><body><div id="nav"><nav class="nav-menu"><a class="site-name current" href="/" title="TM">TM</a><a class="site-index current" href="/"><i class="fa fa-home"></i> <span>首页</span></a><a href="/archives" title="归档"><i class="fa fa-archives"></i> <span>归档</span></a><a href="/tags" title="标签"><i class="fa fa-tags"></i> <span>标签</span></a><a href="/about" title="关于"><i class="fa fa-question-circle"></i> <span>关于</span></a></nav></div><div class="nav-user"><a class="btn-search" title="search bar" href="#"><i class="fa fa-search"></i></a><a class="btn-read-mode" title="readMode bar" href="#"><i class="fa fa-sun-o"></i></a><a class="btn-sns-qr" href="javascript:" rel="external nofollow noreferrer"><i class="fa fa-telegram"></i></a></div><div id="wrapper" class="clearfix"><div id="body"><div class="main" id="main"><div id="cover"><img class="cover-img" src="/images/cover-day.webp" alt="cover-img" loading="lazy"><div class="cover-info"><img class="avatar" src="/images/logo.webp" width="100" alt="avatar" loading="lazy"><h1>托码特人</h1><h3>用代码摇滚这个世界</h3><h4>一个关注科技与人文的技术博客</h4><div class="cover-sns"><div class="btn btn-twitter"><a href="https://twitter.com/thomartisen" title="twitter" rel="external nofollow noopener" target="_blank"><i class="fa fa-twitter"></i></a></div><div class="btn btn-reddit"><a href="https://www.reddit.com/user/thomartisen" title="reddit" rel="external nofollow noopener" target="_blank"><i class="fa fa-reddit"></i></a></div><div class="btn btn-youtube"><a href="https://www.youtube.com/@thomartisen" title="youtube" rel="external nofollow noopener" target="_blank"><i class="fa fa-youtube"></i></a></div><div class="btn btn-medium"><a href="https://thomartisen.medium.com" title="medium" rel="external nofollow noopener" target="_blank"><i class="fa fa-medium"></i></a></div></div></div></div><div class="page-title"><ul><li><a href="/">最新</a></li><li class="active"><a href="/categories/prdeve" data-name="产品研发">产品研发</a></li><li><a href="/categories/ditech" data-name="数码科技">数码科技</a></li><li><a href="/categories/hulife" data-name="人文生活">人文生活</a></li><li><a href="/categories/groceries" data-name="杂货铺">杂货铺</a></li><li class="page-search"><form id="search" class="search-form"><input type="text" readonly id="local-search-input-tip" placeholder="读物检索~"> <button type="button" disabled class="search-form-submit"><i class="fa fa-search"></i></button></form></li></ul></div><div class="main-inner"><article class="post" itemscope itemtype="https://schema.org/BlogPosting"><div class="post-header"><div class="post-author clearfix" itemscope itemtype="https://schema.org/Person"><a class="avatar fleft" target="_blank" href="https://tangkunyin.com" rel="author noopener"><img width="48" src="/images/avatar.webp" alt="avatar" itemprop="image"></a><p><span class="label">作者</span> <a target="_blank" rel="noopener" href="https://tangkunyin.com" itemprop="url"><span itemprop="name">托码斯</span></a> <span itemprop="datePublished" content="2018-06-03T19:06:22.000+08:00">最后编辑于&nbsp;2018-06-03</span></p><p itemprop="description">一个写代码的「伪文人」</p></div><h1 class="post-title"><a target="_self" href="https://thomartisen.com/prodev/mobx-study/" itemprop="mainEntityOfPage"><span itemprop="headline">Mobx使用详解及最佳实践</span></a></h1><div class="post-meta" itemprop="wordCount">本文共计2729个字 | <span id="busuanzi_container_page_pv">你是第&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位到访读者</span></div></div><div class="post-content markdown-body" itemprop="articleBody"><h2 id="细说最佳实践"><a href="#细说最佳实践" class="headerlink" title="细说最佳实践"></a>细说最佳实践</h2><h3 id="stores-代表着UI状态"><a href="#stores-代表着UI状态" class="headerlink" title="stores 代表着UI状态"></a>stores 代表着UI状态</h3><p>永远记住，你的stores代表着你的UI状态，这就意味着，当你将你的stores储存下来后，就算你关了网页，再次打开，载入这个stores，你得到的网页也应该是相同的。虽然stores并不是一个本地数据库的角色，但是他依然存储着一些类似于按钮是否可见，input里面的内容之类的UI状态。</p><pre><code class="hljs javascript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">SearchStore</span> &#123;
+  @observable searchText;
+
+  @action
+  setSearchText = <span class="hljs-function">(<span class="hljs-params">searchText</span>) =&gt;</span> &#123;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">searchText</span> = searchText
+  &#125;
+&#125;
+
+@observer
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">SearchInput</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">React.Component</span> &#123;
+
+  handleInputChanged = <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> &#123;
+    <span class="hljs-keyword">const</span> &#123; searchStore &#125; = <span class="hljs-variable language_">this</span>.<span class="hljs-property">props</span>;
+    searchStore.<span class="hljs-title function_">setSearchText</span>(event.<span class="hljs-property">target</span>.<span class="hljs-property">value</span>);
+  &#125;
+
+  <span class="hljs-title function_">render</span>(<span class="hljs-params"></span>) &#123;
+    <span class="hljs-keyword">const</span> &#123; searchStore &#125; = <span class="hljs-variable language_">this</span>.<span class="hljs-property">props</span>;
+    <span class="hljs-keyword">return</span> (
+      <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span></span></span>
+<span class="hljs-tag"><span class="language-xml">        <span class="hljs-attr">value</span>=<span class="hljs-string">&#123;searchStore.searchText&#125;</span></span></span>
+<span class="hljs-tag"><span class="language-xml">        <span class="hljs-attr">onChange</span>=<span class="hljs-string">&#123;this.handleInputChanged&#125;</span></span></span>
+<span class="hljs-tag"><span class="language-xml">      /&gt;</span></span>
+    );
+  &#125;
+&#125;</code></pre><h3 id="将你的REST-API请求和store的action分离"><a href="#将你的REST-API请求和store的action分离" class="headerlink" title="将你的REST API请求和store的action分离"></a>将你的REST API请求和store的action分离</h3><p>不建议将REST API请求的函数放在stores里面，因为这样以来这些请求代码很难测试。你可以尝试把这些请求函数放在一个类里面，把这个类的代码和store放在一起，在store创建时，这个类也相应创建。然后当你测试时，你也可以优雅的把数据从这些类里面mock上去。</p><pre><code class="hljs javascript">
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">TodoApi</span> &#123;
+
+  fetchTodos = <span class="hljs-function">() =&gt;</span> request.<span class="hljs-title function_">get</span>(<span class="hljs-string">&#x27;/todos&#x27;</span>)
+&#125;
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">TodoStore</span> &#123;
+
+  @observable todos = [];
+
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">todoApi</span>) &#123;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">todoApi</span> = todoApi;
+  &#125;
+
+  fetchTodos = <span class="hljs-keyword">async</span> () =&gt; &#123;
+    <span class="hljs-keyword">const</span> todos = <span class="hljs-keyword">await</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">todoApi</span>.<span class="hljs-title function_">fetchTodos</span>();
+
+    <span class="hljs-title function_">runInAction</span>(<span class="hljs-function">() =&gt;</span> &#123;
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">todos</span> = todos;
+    &#125;);
+  &#125;
+&#125;
+</code></pre><pre><code class="hljs javascript"><span class="hljs-comment">// 在你的主要函数里面</span>
+<span class="hljs-keyword">const</span> todoApi = <span class="hljs-keyword">new</span> <span class="hljs-title class_">TodoApi</span>();
+<span class="hljs-keyword">const</span> todoStore = <span class="hljs-keyword">new</span> <span class="hljs-title class_">TodoStore</span>(todoApi);</code></pre><h3 id="把你的业务逻辑放在stores里面"><a href="#把你的业务逻辑放在stores里面" class="headerlink" title="把你的业务逻辑放在stores里面"></a>把你的业务逻辑放在stores里面</h3><p>尽量不要把业务逻辑写在你的组件里面。当你把业务逻辑写在组件里面的时候，你是没有办法来及时定位错误的，因为你的业务逻辑分散在各种不同的组件里面，让你很难来通过行为来定义到底是哪些代码涉及的这个错误。最好就把业务逻辑放在stores的方法里面，从组件里面调用。</p><h3 id="避免使用全局的store实例"><a href="#避免使用全局的store实例" class="headerlink" title="避免使用全局的store实例"></a>避免使用全局的store实例</h3><p>请尽量避免使用全局的store实例，因为这样你很难写出有条理而可靠的组件测试。取而代之的是，你可以使用Provider来把你的store inject到你的component实例的props里面。这样你就可以轻松的mock这些store来测试了。</p><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> searchStore = <span class="hljs-keyword">new</span> <span class="hljs-title class_">SearchStore</span>();
+
+<span class="hljs-keyword">const</span> app = (
+  <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">Provider</span> <span class="hljs-attr">searchStore</span>=<span class="hljs-string">&#123;searchStore&#125;</span>&gt;</span></span>
+<span class="language-xml">    <span class="hljs-tag">&lt;<span class="hljs-name">SearchInput</span> /&gt;</span></span>
+<span class="language-xml">  <span class="hljs-tag">&lt;/<span class="hljs-name">Provider</span>&gt;</span></span>
+);
+
+<span class="hljs-title class_">ReactDom</span>.<span class="hljs-title function_">render</span>(app, container);</code></pre><h3 id="只有在store里面才允许改变属性"><a href="#只有在store里面才允许改变属性" class="headerlink" title="只有在store里面才允许改变属性"></a>只有在store里面才允许改变属性</h3><p>请不要直接在组件里面直接操作store的属性值。因为只有store才能够来修改自己的属性。当你要改变属性的时候，请使用相应的store方法。不然的话你的属性修改会散落在各处不受控制，这是很难debug的。</p><h3 id="时刻记得在组件声明-observer"><a href="#时刻记得在组件声明-observer" class="headerlink" title="时刻记得在组件声明 @observer"></a>时刻记得在组件声明 @observer</h3><p>在每个组件声明的时候使用@observer来更新组件的状态。不然在嵌套组件里面，子组件没有声明的话，每次状态更新涉及到的都是父组件级的重新渲染。当你都使用了@observer时，重新渲染的组件数量会大大降低。</p><h3 id="使用-computed"><a href="#使用-computed" class="headerlink" title="使用 @computed"></a>使用 @computed</h3><p>就像下面代码的例子，使用@computed属性来处理一些涉及多个属性的逻辑。使用@computed可以减少这样的判断类业务逻辑在组件里面出现的频率。</p><pre><code class="hljs javascript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">ApplicationStore</span> &#123;
+
+  @observable loggedInUser;
+
+  @observable isInAdminMode;
+
+  @computed isAdminButtonEnabled = <span class="hljs-function">() =&gt;</span> &#123;
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">loggedInUser</span>.<span class="hljs-property">role</span> === <span class="hljs-string">&#x27;admin&#x27;</span> &amp;&amp; <span class="hljs-variable language_">this</span>.<span class="hljs-property">isInAdminMode</span>;
+  &#125;
+&#125;</code></pre><h3 id="你不需要-react-router-来管理状态"><a href="#你不需要-react-router-来管理状态" class="headerlink" title="你不需要 react router 来管理状态"></a>你不需要 react router 来管理状态</h3><p>你不需要使用react router管理状态。就像我前面所说的，你的store就代表了应用的状态。当你让router来管理部份应用状态的时候，这部分状态就从store里面剥离开来。所以尽量使用store来储存所有的UI状态，这样store的属性就是你的界面所得。</p><h3 id="倾向于编写可控组件"><a href="#倾向于编写可控组件" class="headerlink" title="倾向于编写可控组件"></a>倾向于编写可控组件</h3><p>多编写可控组件，这样会大大降低你的测试复杂度，也让你的组件易于管理。</p><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>作者：Dominic_Ming<br>链接：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://juejin.im/post/5a3b1a88f265da431440dc4a">https://juejin.im/post/5a3b1a88f265da431440dc4a</a><br>来源：掘金</p></div><div class="post-tags">标签： <a href="/tags/theways/">姿势</a> <a href="/tags/proglangs/">编程语言</a></div></article><p style="text-align:center">请注意: 本文所述内容及观点仅代表个人看法，由于知识水平有限，行文难免出现差错，欢迎留言交流。谢谢！</p><div id="disqus_thread"></div><script>if("https://thomartisen.com"===location.origin){var disqus_config=function(){this.page.url=location.href,this.page.identifier=location.pathname};!function(){var t=document,e=t.createElement("script");e.src="https://thomartisen-com.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()}</script><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener external nofollow noreferrer" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div></div></div><footer class="footer"><div class="footer-inner" style="text-align:center"><p>本站已建立&nbsp;<a href="/about/#我的那些青葱岁月" id="siteBuildingTime"></a>&nbsp;天， <span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span><br>©2017-<span id="cpYear"></span> 基于&nbsp;<a href="http://hexo.io" target="_blank" rel="external nofollow noopener" title="Hexo">Hexo</a> ，主题采用&nbsp;&nbsp;<a href="https://github.com/tangkunyin/hexo-theme-jsimple" target="_blank" rel="external nofollow noopener" title="JSimple theme">JSimple</a> ，作者&nbsp;<a href="https://tangkunyin.com" target="_blank" rel="external author noopener" title="author">托码斯</a> ，托管于 <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener" title="GitHub Pages">GitHub Pages</a> ，<a href="https://thomartisen.com/sitemap.xml" title="网站地图" rel="alternate" type="application/xml">网站地图</a></p></div></footer></div><div class="popup search-popup local-search-popup"><div class="local-search-header clearfix"><span class="search-icon"><i class="fa fa-search"></i></span><span class="popup-btn-close"><i class="fa fa-times-circle"></i></span><div class="local-search-input-wrapper"><input id="local-search-input" spellcheck="true" type="text" autocomplete="off" placeholder="请输入查询关键词"></div></div><div id="local-search-result"></div></div><div class="fixed-btn"><a class="btn-gotop" href="javascript:" rel="external nofollow noreferrer"><i class="fa fa-angle-up"></i></a></div><script async src="/js/SimpleCore.min.js"></script><script defer src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script async id="dsq-count-scr" src="//thomartisen-com.disqus.com/count.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-EETPY7KE74"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-EETPY7KE74")</script></body></html>
