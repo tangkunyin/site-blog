@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://thomartisen.com/prodev/preact-learning-notes1/</loc>
+    <loc>https://thomartisen.com/prodev/ts-study-part2/</loc>
     
     <lastmod>2024-04-25</lastmod>
     
@@ -12,6 +12,51 @@
   
   <url>
     <loc>https://thomartisen.com/prodev/prepare-to-dev-desktop/</loc>
+    
+    <lastmod>2024-04-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/prodev/ts-study-part1/</loc>
+    
+    <lastmod>2024-04-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/prodev/practice-in-microfrontends/</loc>
+    
+    <lastmod>2024-04-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/prodev/how-to-create-plugin-for-typedoc/</loc>
+    
+    <lastmod>2024-04-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/prodev/typedoc-notes/</loc>
+    
+    <lastmod>2024-04-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/prodev/preact-learning-notes1/</loc>
     
     <lastmod>2024-04-25</lastmod>
     
@@ -93,15 +138,6 @@
   
   <url>
     <loc>https://thomartisen.com/prodev/reinstall-mysql/</loc>
-    
-    <lastmod>2024-04-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/prodev/practice-in-microfrontends/</loc>
     
     <lastmod>2024-04-25</lastmod>
     
@@ -587,42 +623,6 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/how-to-create-plugin-for-typedoc/</loc>
-    
-    <lastmod>2024-04-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/prodev/typedoc-notes/</loc>
-    
-    <lastmod>2024-04-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/prodev/ts-study-part1/</loc>
-    
-    <lastmod>2024-04-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/prodev/ts-study-part2/</loc>
-    
-    <lastmod>2024-04-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://thomartisen.com/prodev/exclusiveTouch-iOS/</loc>
     
     <lastmod>2024-04-21</lastmod>
@@ -686,21 +686,14 @@
 
   
   <url>
-    <loc>https://thomartisen.com/tags/frontend/</loc>
+    <loc>https://thomartisen.com/tags/proglangs/</loc>
     <lastmod>2024-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://thomartisen.com/tags/frameworks/</loc>
-    <lastmod>2024-04-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/tags/theways/</loc>
+    <loc>https://thomartisen.com/tags/apple/</loc>
     <lastmod>2024-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -721,14 +714,21 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/tags/apple/</loc>
+    <loc>https://thomartisen.com/tags/frontend/</loc>
     <lastmod>2024-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://thomartisen.com/tags/proglangs/</loc>
+    <loc>https://thomartisen.com/tags/frameworks/</loc>
+    <lastmod>2024-04-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/tags/theways/</loc>
     <lastmod>2024-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
