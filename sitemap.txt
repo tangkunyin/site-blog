@@ -1,3 +1,5 @@
+https://thomartisen.com/ditech/experience-about-tongyi-and-yiyan/
+https://thomartisen.com/hulife/Leave-Beijing-to-Nanjing/
 https://thomartisen.com/prodev/ts-study-part2/
 https://thomartisen.com/prodev/prepare-to-dev-desktop/
 https://thomartisen.com/prodev/ts-study-part1/
@@ -38,7 +40,6 @@ https://thomartisen.com/prodev/mobx-vs-redux/
 https://thomartisen.com/ditech/nodeppt/
 https://thomartisen.com/prodev/micro-frontends/
 https://thomartisen.com/ditech/flac-music/
-https://thomartisen.com/hulife/Leave-Beijing-to-Nanjing/
 https://thomartisen.com/hulife/always-refueling-but-never-awards/
 https://thomartisen.com/prodev/mobile-web-develop-notes/
 https://thomartisen.com/groceries/use-gulp-to-speed-hexo/
