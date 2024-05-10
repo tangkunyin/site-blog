@@ -3,3 +3,4 @@ User-agent: *
 Disallow: /cdn-cgi/
 
 Sitemap: https://thomartisen.com/sitemap.xml
+
