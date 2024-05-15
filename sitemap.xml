@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://thomartisen.com/prodev/zai-juan-ye-shi-cai/</loc>
+    <loc>https://thomartisen.com/hulife/zai-juan-ye-shi-cai/</loc>
     
     <lastmod>2024-05-15</lastmod>
     
@@ -704,20 +704,6 @@
 
   
   <url>
-    <loc>https://thomartisen.com/tags/frontend/</loc>
-    <lastmod>2024-05-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/tags/frameworks/</loc>
-    <lastmod>2024-05-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://thomartisen.com/tags/proglangs/</loc>
     <lastmod>2024-05-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -740,6 +726,20 @@
   
   <url>
     <loc>https://thomartisen.com/tags/infrastructure/</loc>
+    <lastmod>2024-05-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/tags/frontend/</loc>
+    <lastmod>2024-05-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://thomartisen.com/tags/frameworks/</loc>
     <lastmod>2024-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -788,14 +788,14 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/tags/projectx/</loc>
+    <loc>https://thomartisen.com/tags/traveling/</loc>
     <lastmod>2024-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://thomartisen.com/tags/traveling/</loc>
+    <loc>https://thomartisen.com/tags/projectx/</loc>
     <lastmod>2024-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
