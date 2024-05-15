@@ -1,21 +1,18 @@
-/* @import url(./FontModule.css); */
-
 html {
     height: 100%;
-    font-family: sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    overflow: -moz-scrollbars-none;
 }
 
 body {
     margin: 0;
     padding-left: 170px;
-    font: 15px/1.6 'Biaodian Pro Sans GB','Helvetica Neue',Helvetica,Arial,'pingfang sc','Hiragino Sans GB','Microsoft YaHei','微软雅黑',STHeiti,SimSun,sans-serif;
     color: #1a1a1a;
-    -ms-overflow-style: none;
-    -webkit-font-smoothing: antialiased;
+    font: 15px/1.6 'Biaodian Pro Sans GB', 'Helvetica Neue', Helvetica, Arial, 'pingfang sc', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', STHeiti, SimSun, sans-serif;
     text-rendering: optimizeLegibility;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
 }
 
 body::-webkit-scrollbar {
@@ -485,7 +482,9 @@ img.avatar {
     text-align: center;
 }
 
-#cover h1,h3,h4 {
+#cover h1,
+h3,
+h4 {
     font-family: Georgia, Times New Roman, Times, Songti SC, serif;
     margin: 8px 0;
 }
@@ -595,7 +594,7 @@ img.avatar {
     box-sizing: border-box;
     border-bottom: 2px solid #d9d9d9;
     background-color: #fff;
-    font-family: Georgia,Times New Roman,Times,Songti SC,serif;
+    font-family: Georgia, Times New Roman, Times, Songti SC, serif;
 }
 
 .page-title ul {
@@ -673,6 +672,7 @@ img.avatar {
 .post-title {
     color: #555;
 }
+
 .post-title:hover {
     text-decoration: underline;
     color: #333;
@@ -681,6 +681,7 @@ img.avatar {
 .post-title-item {
     color: #333;
 }
+
 .post-title-item:hover {
     text-decoration: underline;
 }
@@ -1124,6 +1125,7 @@ body.night-mode a,
 .night-mode .page-number.current {
     color: #e2e2e2;
 }
+
 .night-mode a:hover {
     color: #fff;
 }
@@ -1260,8 +1262,8 @@ body.night-mode a,
     color: #101423;
     line-height: 1.8;
     word-wrap: break-word;
-    overflow: scroll;
-    font-family: -apple-system,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica,Arial,sans-serif;
+    overflow: auto;
+    font-family: -apple-system, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica, Arial, sans-serif;
 }
 
 .markdown-body,
