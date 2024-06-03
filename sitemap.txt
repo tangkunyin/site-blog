@@ -6,8 +6,8 @@ https://tomartisan.com/prodev/ts-study-part2/
 https://tomartisan.com/prodev/typedoc-notes/
 https://tomartisan.com/prodev/practice-in-microfrontends/
 https://tomartisan.com/groceries/jsimple-usage/
-https://tomartisan.com/groceries/the-update-for-jsimple-in-early2019/
 https://tomartisan.com/prodev/how-to-create-plugin-for-typedoc/
+https://tomartisan.com/groceries/the-update-for-jsimple-in-early2019/
 https://tomartisan.com/about/
 https://tomartisan.com/hulife/zai-juan-ye-shi-cai/
 https://tomartisan.com/ditech/experience-about-tongyi-and-yiyan/
@@ -80,10 +80,10 @@ https://tomartisan.com/tags/efficiency/
 https://tomartisan.com/tags/infrastructure/
 https://tomartisan.com/tags/proglangs/
 https://tomartisan.com/tags/apple/
-https://tomartisan.com/tags/frontend/
-https://tomartisan.com/tags/frameworks/
 https://tomartisan.com/tags/theways/
 https://tomartisan.com/tags/technology/
+https://tomartisan.com/tags/frontend/
+https://tomartisan.com/tags/frameworks/
 https://tomartisan.com/tags/prose/
 https://tomartisan.com/tags/digital/
 https://tomartisan.com/tags/reading/
