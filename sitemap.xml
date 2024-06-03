@@ -2,7 +2,106 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://thomartisen.com/hulife/zai-juan-ye-shi-cai/</loc>
+    <loc>https://tomartisan.com/groceries/use-gulp-to-speed-hexo/</loc>
+    
+    <lastmod>2024-06-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://tomartisan.com/prodev/ts-study-part1/</loc>
+    
+    <lastmod>2024-06-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://tomartisan.com/prodev/prepare-to-dev-desktop/</loc>
+    
+    <lastmod>2024-06-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://tomartisan.com/groceries/permalink-optimize-hexo/</loc>
+    
+    <lastmod>2024-06-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://tomartisan.com/prodev/ts-study-part2/</loc>
+    
+    <lastmod>2024-06-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://tomartisan.com/prodev/typedoc-notes/</loc>
+    
+    <lastmod>2024-06-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://tomartisan.com/prodev/practice-in-microfrontends/</loc>
+    
+    <lastmod>2024-06-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://tomartisan.com/groceries/jsimple-usage/</loc>
+    
+    <lastmod>2024-06-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://tomartisan.com/groceries/the-update-for-jsimple-in-early2019/</loc>
+    
+    <lastmod>2024-06-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://tomartisan.com/prodev/how-to-create-plugin-for-typedoc/</loc>
+    
+    <lastmod>2024-06-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://tomartisan.com/about/</loc>
+    
+    <lastmod>2024-06-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://tomartisan.com/hulife/zai-juan-ye-shi-cai/</loc>
     
     <lastmod>2024-05-15</lastmod>
     
@@ -11,7 +110,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/ditech/experience-about-tongyi-and-yiyan/</loc>
+    <loc>https://tomartisan.com/ditech/experience-about-tongyi-and-yiyan/</loc>
     
     <lastmod>2024-05-09</lastmod>
     
@@ -20,7 +119,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/hulife/Leave-Beijing-to-Nanjing/</loc>
+    <loc>https://tomartisan.com/hulife/Leave-Beijing-to-Nanjing/</loc>
     
     <lastmod>2024-05-04</lastmod>
     
@@ -29,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/ts-study-part2/</loc>
+    <loc>https://tomartisan.com/prodev/preact-learning-notes1/</loc>
     
     <lastmod>2024-04-25</lastmod>
     
@@ -38,7 +137,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/prepare-to-dev-desktop/</loc>
+    <loc>https://tomartisan.com/prodev/iife-notes/</loc>
     
     <lastmod>2024-04-25</lastmod>
     
@@ -47,7 +146,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/ts-study-part1/</loc>
+    <loc>https://tomartisan.com/prodev/docker-usage/</loc>
     
     <lastmod>2024-04-25</lastmod>
     
@@ -56,7 +155,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/practice-in-microfrontends/</loc>
+    <loc>https://tomartisan.com/ditech/piano-learning-part1/</loc>
     
     <lastmod>2024-04-25</lastmod>
     
@@ -65,7 +164,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/how-to-create-plugin-for-typedoc/</loc>
+    <loc>https://tomartisan.com/prodev/codereview-explore/</loc>
     
     <lastmod>2024-04-25</lastmod>
     
@@ -74,7 +173,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/typedoc-notes/</loc>
+    <loc>https://tomartisan.com/prodev/about-git/</loc>
     
     <lastmod>2024-04-25</lastmod>
     
@@ -83,7 +182,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/preact-learning-notes1/</loc>
+    <loc>https://tomartisan.com/ditech/niz-keybord/</loc>
     
     <lastmod>2024-04-25</lastmod>
     
@@ -92,7 +191,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/iife-notes/</loc>
+    <loc>https://tomartisan.com/prodev/debug-nodets-in-vscode/</loc>
     
     <lastmod>2024-04-25</lastmod>
     
@@ -101,7 +200,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/docker-usage/</loc>
+    <loc>https://tomartisan.com/prodev/thinking-about-work/</loc>
     
     <lastmod>2024-04-25</lastmod>
     
@@ -110,7 +209,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/ditech/piano-learning-part1/</loc>
+    <loc>https://tomartisan.com/prodev/reinstall-mysql/</loc>
     
     <lastmod>2024-04-25</lastmod>
     
@@ -119,7 +218,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/codereview-explore/</loc>
+    <loc>https://tomartisan.com/hulife/car-first-maintenance/</loc>
     
     <lastmod>2024-04-25</lastmod>
     
@@ -128,61 +227,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/about-git/</loc>
-    
-    <lastmod>2024-04-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/ditech/niz-keybord/</loc>
-    
-    <lastmod>2024-04-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/prodev/debug-nodets-in-vscode/</loc>
-    
-    <lastmod>2024-04-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/prodev/thinking-about-work/</loc>
-    
-    <lastmod>2024-04-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/prodev/reinstall-mysql/</loc>
-    
-    <lastmod>2024-04-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/hulife/car-first-maintenance/</loc>
-    
-    <lastmod>2024-04-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/prodev/random-objectiveC/</loc>
+    <loc>https://tomartisan.com/prodev/random-objectiveC/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -191,7 +236,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/url-encoding-iOS/</loc>
+    <loc>https://tomartisan.com/prodev/url-encoding-iOS/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -200,7 +245,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/property-in-action-iOS/</loc>
+    <loc>https://tomartisan.com/prodev/property-in-action-iOS/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -209,7 +254,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/three-unary-iOS/</loc>
+    <loc>https://tomartisan.com/prodev/three-unary-iOS/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -218,7 +263,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/property-and-memberVar-in-iOS/</loc>
+    <loc>https://tomartisan.com/prodev/property-and-memberVar-in-iOS/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -227,7 +272,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/pushViewController-change/</loc>
+    <loc>https://tomartisan.com/prodev/pushViewController-change/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -236,7 +281,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/iOS-Pointer/</loc>
+    <loc>https://tomartisan.com/prodev/iOS-Pointer/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -245,7 +290,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/instancetype-iOS/</loc>
+    <loc>https://tomartisan.com/prodev/instancetype-iOS/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -254,7 +299,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/NSScanner/</loc>
+    <loc>https://tomartisan.com/prodev/NSScanner/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -263,7 +308,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/interfaceOrientation-iOS/</loc>
+    <loc>https://tomartisan.com/prodev/interfaceOrientation-iOS/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -272,7 +317,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/performSelector-warning-fix/</loc>
+    <loc>https://tomartisan.com/prodev/performSelector-warning-fix/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -281,7 +326,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/create-rn-in-better-way/</loc>
+    <loc>https://tomartisan.com/prodev/create-rn-in-better-way/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -290,7 +335,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/redux-study/</loc>
+    <loc>https://tomartisan.com/prodev/redux-study/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -299,7 +344,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/groceries/jsimple-usage/</loc>
+    <loc>https://tomartisan.com/hulife/reading-or-not/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -308,7 +353,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/hulife/reading-or-not/</loc>
+    <loc>https://tomartisan.com/groceries/config-about-mweb-writing/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -317,7 +362,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/groceries/config-about-mweb-writing/</loc>
+    <loc>https://tomartisan.com/prodev/swift-in-serverside/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -326,7 +371,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/swift-in-serverside/</loc>
+    <loc>https://tomartisan.com/prodev/cross-platform-desktop/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -335,7 +380,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/cross-platform-desktop/</loc>
+    <loc>https://tomartisan.com/prodev/javascript-module-notes/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -344,7 +389,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/javascript-module-notes/</loc>
+    <loc>https://tomartisan.com/prodev/mobx-vs-redux/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -353,7 +398,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/mobx-vs-redux/</loc>
+    <loc>https://tomartisan.com/ditech/nodeppt/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -362,7 +407,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/ditech/nodeppt/</loc>
+    <loc>https://tomartisan.com/prodev/micro-frontends/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -371,7 +416,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/micro-frontends/</loc>
+    <loc>https://tomartisan.com/ditech/flac-music/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -380,7 +425,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/ditech/flac-music/</loc>
+    <loc>https://tomartisan.com/hulife/always-refueling-but-never-awards/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -389,7 +434,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/hulife/always-refueling-but-never-awards/</loc>
+    <loc>https://tomartisan.com/prodev/mobile-web-develop-notes/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -398,7 +443,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/mobile-web-develop-notes/</loc>
+    <loc>https://tomartisan.com/prodev/reduce-array-to-object/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -407,7 +452,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/groceries/use-gulp-to-speed-hexo/</loc>
+    <loc>https://tomartisan.com/groceries/hexo-perfect-link/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -416,7 +461,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/reduce-array-to-object/</loc>
+    <loc>https://tomartisan.com/groceries/WizNote-Uninstall/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -425,7 +470,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/groceries/hexo-perfect-link/</loc>
+    <loc>https://tomartisan.com/hulife/the-optimization-about-tags/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -434,7 +479,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/groceries/WizNote-Uninstall/</loc>
+    <loc>https://tomartisan.com/prodev/AES_CBC-iOS/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -443,7 +488,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/hulife/the-optimization-about-tags/</loc>
+    <loc>https://tomartisan.com/prodev/dealloc-not-work/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -452,7 +497,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/AES_CBC-iOS/</loc>
+    <loc>https://tomartisan.com/prodev/flutter-and-rax-hello/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -461,7 +506,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/dealloc-not-work/</loc>
+    <loc>https://tomartisan.com/prodev/flux-study/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -470,7 +515,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/flutter-and-rax-hello/</loc>
+    <loc>https://tomartisan.com/prodev/git-revert/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -479,7 +524,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/flux-study/</loc>
+    <loc>https://tomartisan.com/prodev/ipa-command-packaging/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -488,7 +533,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/git-revert/</loc>
+    <loc>https://tomartisan.com/prodev/data-pass-in-iOS/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -497,7 +542,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/ipa-command-packaging/</loc>
+    <loc>https://tomartisan.com/groceries/extended-attri-in-mac/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -506,7 +551,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/data-pass-in-iOS/</loc>
+    <loc>https://tomartisan.com/ditech/mac-tools/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -515,7 +560,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/groceries/extended-attri-in-mac/</loc>
+    <loc>https://tomartisan.com/prodev/mobx-study/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -524,7 +569,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/ditech/mac-tools/</loc>
+    <loc>https://tomartisan.com/prodev/mobx-core-study/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -533,7 +578,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/mobx-study/</loc>
+    <loc>https://tomartisan.com/prodev/mrc-and-arc/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -542,7 +587,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/mobx-core-study/</loc>
+    <loc>https://tomartisan.com/prodev/npm-script-postinstall/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -551,7 +596,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/mrc-and-arc/</loc>
+    <loc>https://tomartisan.com/prodev/what-is-the-npx/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -560,7 +605,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/npm-script-postinstall/</loc>
+    <loc>https://tomartisan.com/prodev/pm2-rn-combine/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -569,7 +614,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/what-is-the-npx/</loc>
+    <loc>https://tomartisan.com/prodev/react16-usage/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -578,7 +623,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/pm2-rn-combine/</loc>
+    <loc>https://tomartisan.com/prodev/react-navigation/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -587,7 +632,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/react16-usage/</loc>
+    <loc>https://tomartisan.com/prodev/swift-oc-coding/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -596,7 +641,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/react-navigation/</loc>
+    <loc>https://tomartisan.com/prodev/swift-oc-coding/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -605,7 +650,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/swift-oc-coding/</loc>
+    <loc>https://tomartisan.com/prodev/allow--declaration-with--allowJs/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -614,7 +659,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/swift-oc-coding/</loc>
+    <loc>https://tomartisan.com/prodev/exclusiveTouch-iOS/</loc>
     
     <lastmod>2024-04-21</lastmod>
     
@@ -623,52 +668,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/groceries/the-update-for-jsimple-in-early2019/</loc>
-    
-    <lastmod>2024-04-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/prodev/allow--declaration-with--allowJs/</loc>
-    
-    <lastmod>2024-04-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/prodev/exclusiveTouch-iOS/</loc>
-    
-    <lastmod>2024-04-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/groceries/permalink-optimize-hexo/</loc>
-    
-    <lastmod>2024-04-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/about/</loc>
-    
-    <lastmod>2024-03-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://thomartisen.com/tags/</loc>
+    <loc>https://tomartisan.com/tags/</loc>
     
     <lastmod>2024-03-26</lastmod>
     
@@ -677,7 +677,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/groceries/highlight-webstorm/</loc>
+    <loc>https://tomartisan.com/groceries/highlight-webstorm/</loc>
     
     <lastmod>2024-03-26</lastmod>
     
@@ -686,7 +686,7 @@
   </url>
   
   <url>
-    <loc>https://thomartisen.com/prodev/swift-in-commandLine/</loc>
+    <loc>https://tomartisan.com/prodev/swift-in-commandLine/</loc>
     
     <lastmod>2024-03-26</lastmod>
     
@@ -696,114 +696,114 @@
   
 
   <url>
-    <loc>https://thomartisen.com/</loc>
-    <lastmod>2024-05-27</lastmod>
+    <loc>https://tomartisan.com/</loc>
+    <lastmod>2024-06-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://thomartisen.com/tags/proglangs/</loc>
-    <lastmod>2024-05-27</lastmod>
+    <loc>https://tomartisan.com/tags/proglangs/</loc>
+    <lastmod>2024-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://thomartisen.com/tags/apple/</loc>
-    <lastmod>2024-05-27</lastmod>
+    <loc>https://tomartisan.com/tags/apple/</loc>
+    <lastmod>2024-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://thomartisen.com/tags/efficiency/</loc>
-    <lastmod>2024-05-27</lastmod>
+    <loc>https://tomartisan.com/tags/efficiency/</loc>
+    <lastmod>2024-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://thomartisen.com/tags/infrastructure/</loc>
-    <lastmod>2024-05-27</lastmod>
+    <loc>https://tomartisan.com/tags/infrastructure/</loc>
+    <lastmod>2024-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://thomartisen.com/tags/frontend/</loc>
-    <lastmod>2024-05-27</lastmod>
+    <loc>https://tomartisan.com/tags/frontend/</loc>
+    <lastmod>2024-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://thomartisen.com/tags/frameworks/</loc>
-    <lastmod>2024-05-27</lastmod>
+    <loc>https://tomartisan.com/tags/frameworks/</loc>
+    <lastmod>2024-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://thomartisen.com/tags/theways/</loc>
-    <lastmod>2024-05-27</lastmod>
+    <loc>https://tomartisan.com/tags/theways/</loc>
+    <lastmod>2024-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://thomartisen.com/tags/technology/</loc>
-    <lastmod>2024-05-27</lastmod>
+    <loc>https://tomartisan.com/tags/technology/</loc>
+    <lastmod>2024-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://thomartisen.com/tags/prose/</loc>
-    <lastmod>2024-05-27</lastmod>
+    <loc>https://tomartisan.com/tags/prose/</loc>
+    <lastmod>2024-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://thomartisen.com/tags/digital/</loc>
-    <lastmod>2024-05-27</lastmod>
+    <loc>https://tomartisan.com/tags/digital/</loc>
+    <lastmod>2024-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://thomartisen.com/tags/reading/</loc>
-    <lastmod>2024-05-27</lastmod>
+    <loc>https://tomartisan.com/tags/reading/</loc>
+    <lastmod>2024-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://thomartisen.com/tags/life/</loc>
-    <lastmod>2024-05-27</lastmod>
+    <loc>https://tomartisan.com/tags/life/</loc>
+    <lastmod>2024-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://thomartisen.com/tags/traveling/</loc>
-    <lastmod>2024-05-27</lastmod>
+    <loc>https://tomartisan.com/tags/traveling/</loc>
+    <lastmod>2024-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://thomartisen.com/tags/projectx/</loc>
-    <lastmod>2024-05-27</lastmod>
+    <loc>https://tomartisan.com/tags/projectx/</loc>
+    <lastmod>2024-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://thomartisen.com/tags/backend/</loc>
-    <lastmod>2024-05-27</lastmod>
+    <loc>https://tomartisan.com/tags/backend/</loc>
+    <lastmod>2024-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -811,29 +811,29 @@
 
   
   <url>
-    <loc>https://thomartisen.com/categories/prodev/</loc>
-    <lastmod>2024-05-27</lastmod>
+    <loc>https://tomartisan.com/categories/prodev/</loc>
+    <lastmod>2024-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://thomartisen.com/categories/groceries/</loc>
-    <lastmod>2024-05-27</lastmod>
+    <loc>https://tomartisan.com/categories/groceries/</loc>
+    <lastmod>2024-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://thomartisen.com/categories/ditech/</loc>
-    <lastmod>2024-05-27</lastmod>
+    <loc>https://tomartisan.com/categories/ditech/</loc>
+    <lastmod>2024-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://thomartisen.com/categories/hulife/</loc>
-    <lastmod>2024-05-27</lastmod>
+    <loc>https://tomartisan.com/categories/hulife/</loc>
+    <lastmod>2024-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
