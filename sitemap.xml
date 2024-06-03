@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://tomartisan.com/prodev/ts-study-part1/</loc>
+    <loc>https://tomartisan.com/prodev/prepare-to-dev-desktop/</loc>
     
     <lastmod>2024-06-03</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://tomartisan.com/prodev/prepare-to-dev-desktop/</loc>
+    <loc>https://tomartisan.com/prodev/ts-study-part1/</loc>
     
     <lastmod>2024-06-03</lastmod>
     
@@ -74,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://tomartisan.com/prodev/how-to-create-plugin-for-typedoc/</loc>
+    <loc>https://tomartisan.com/groceries/the-update-for-jsimple-in-early2019/</loc>
     
     <lastmod>2024-06-03</lastmod>
     
@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://tomartisan.com/groceries/the-update-for-jsimple-in-early2019/</loc>
+    <loc>https://tomartisan.com/prodev/how-to-create-plugin-for-typedoc/</loc>
     
     <lastmod>2024-06-03</lastmod>
     
@@ -704,20 +704,6 @@
 
   
   <url>
-    <loc>https://tomartisan.com/tags/efficiency/</loc>
-    <lastmod>2024-06-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tomartisan.com/tags/infrastructure/</loc>
-    <lastmod>2024-06-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://tomartisan.com/tags/proglangs/</loc>
     <lastmod>2024-06-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -732,14 +718,14 @@
   </url>
   
   <url>
-    <loc>https://tomartisan.com/tags/theways/</loc>
+    <loc>https://tomartisan.com/tags/efficiency/</loc>
     <lastmod>2024-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://tomartisan.com/tags/technology/</loc>
+    <loc>https://tomartisan.com/tags/infrastructure/</loc>
     <lastmod>2024-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -754,6 +740,20 @@
   
   <url>
     <loc>https://tomartisan.com/tags/frameworks/</loc>
+    <lastmod>2024-06-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://tomartisan.com/tags/theways/</loc>
+    <lastmod>2024-06-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://tomartisan.com/tags/technology/</loc>
     <lastmod>2024-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
