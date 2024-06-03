@@ -418,7 +418,7 @@ const SimpleCore = {
         $(document).on('click', '.btn-thumbs-up', function (e) {
             e.preventDefault();
             if (SimpleCore.donateImg != '') {
-                SimpleCore.alert('随意赞赏，谢谢','<img style="width:280px;background:#fff;" src="' + SimpleCore.donateImg + '">');
+                SimpleCore.alert('微信扫扫，请喝快乐水','<img style="width:280px;background:#fff;" src="' + SimpleCore.donateImg + '">');
             } else {
                 SimpleCore.alert('未开通赞赏功能','<h4 style="text-align: center;margin: 0">联系博主试试看 ：）</h4>');
             }
