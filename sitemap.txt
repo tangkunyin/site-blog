@@ -76,10 +76,10 @@ https://tomartisan.com/tags/
 https://tomartisan.com/groceries/highlight-webstorm/
 https://tomartisan.com/prodev/swift-in-commandLine/
 https://tomartisan.com/
-https://tomartisan.com/tags/proglangs/
-https://tomartisan.com/tags/apple/
 https://tomartisan.com/tags/efficiency/
 https://tomartisan.com/tags/infrastructure/
+https://tomartisan.com/tags/proglangs/
+https://tomartisan.com/tags/apple/
 https://tomartisan.com/tags/frontend/
 https://tomartisan.com/tags/frameworks/
 https://tomartisan.com/tags/theways/
