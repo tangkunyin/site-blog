@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tomartisan.com/about/</loc>
+    
+    <lastmod>2024-06-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://tomartisan.com/groceries/use-gulp-to-speed-hexo/</loc>
     
     <lastmod>2024-06-03</lastmod>
@@ -84,15 +93,6 @@
   
   <url>
     <loc>https://tomartisan.com/prodev/how-to-create-plugin-for-typedoc/</loc>
-    
-    <lastmod>2024-06-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://tomartisan.com/about/</loc>
     
     <lastmod>2024-06-03</lastmod>
     
@@ -697,7 +697,7 @@
 
   <url>
     <loc>https://tomartisan.com/</loc>
-    <lastmod>2024-06-03</lastmod>
+    <lastmod>2024-06-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -705,105 +705,105 @@
   
   <url>
     <loc>https://tomartisan.com/tags/proglangs/</loc>
-    <lastmod>2024-06-03</lastmod>
+    <lastmod>2024-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://tomartisan.com/tags/apple/</loc>
-    <lastmod>2024-06-03</lastmod>
+    <lastmod>2024-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://tomartisan.com/tags/efficiency/</loc>
-    <lastmod>2024-06-03</lastmod>
+    <lastmod>2024-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://tomartisan.com/tags/infrastructure/</loc>
-    <lastmod>2024-06-03</lastmod>
+    <lastmod>2024-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://tomartisan.com/tags/frontend/</loc>
-    <lastmod>2024-06-03</lastmod>
+    <lastmod>2024-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://tomartisan.com/tags/frameworks/</loc>
-    <lastmod>2024-06-03</lastmod>
+    <lastmod>2024-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://tomartisan.com/tags/theways/</loc>
-    <lastmod>2024-06-03</lastmod>
+    <lastmod>2024-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://tomartisan.com/tags/technology/</loc>
-    <lastmod>2024-06-03</lastmod>
+    <lastmod>2024-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://tomartisan.com/tags/prose/</loc>
-    <lastmod>2024-06-03</lastmod>
+    <lastmod>2024-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://tomartisan.com/tags/digital/</loc>
-    <lastmod>2024-06-03</lastmod>
+    <lastmod>2024-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://tomartisan.com/tags/reading/</loc>
-    <lastmod>2024-06-03</lastmod>
+    <lastmod>2024-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://tomartisan.com/tags/life/</loc>
-    <lastmod>2024-06-03</lastmod>
+    <lastmod>2024-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://tomartisan.com/tags/traveling/</loc>
-    <lastmod>2024-06-03</lastmod>
+    <lastmod>2024-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://tomartisan.com/tags/projectx/</loc>
-    <lastmod>2024-06-03</lastmod>
+    <lastmod>2024-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://tomartisan.com/tags/backend/</loc>
-    <lastmod>2024-06-03</lastmod>
+    <lastmod>2024-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -812,28 +812,28 @@
   
   <url>
     <loc>https://tomartisan.com/categories/prodev/</loc>
-    <lastmod>2024-06-03</lastmod>
+    <lastmod>2024-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://tomartisan.com/categories/groceries/</loc>
-    <lastmod>2024-06-03</lastmod>
+    <lastmod>2024-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://tomartisan.com/categories/ditech/</loc>
-    <lastmod>2024-06-03</lastmod>
+    <lastmod>2024-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://tomartisan.com/categories/hulife/</loc>
-    <lastmod>2024-06-03</lastmod>
+    <lastmod>2024-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

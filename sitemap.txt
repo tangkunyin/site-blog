@@ -1,3 +1,4 @@
+https://tomartisan.com/about/
 https://tomartisan.com/groceries/use-gulp-to-speed-hexo/
 https://tomartisan.com/prodev/prepare-to-dev-desktop/
 https://tomartisan.com/prodev/ts-study-part1/
@@ -8,7 +9,6 @@ https://tomartisan.com/prodev/practice-in-microfrontends/
 https://tomartisan.com/groceries/jsimple-usage/
 https://tomartisan.com/groceries/the-update-for-jsimple-in-early2019/
 https://tomartisan.com/prodev/how-to-create-plugin-for-typedoc/
-https://tomartisan.com/about/
 https://tomartisan.com/hulife/zai-juan-ye-shi-cai/
 https://tomartisan.com/ditech/experience-about-tongyi-and-yiyan/
 https://tomartisan.com/hulife/Leave-Beijing-to-Nanjing/
