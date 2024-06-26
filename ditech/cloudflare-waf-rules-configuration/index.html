@@ -180,7 +180,7 @@
 <p>后来发现<a target="_blank" rel="noopener external nofollow noreferrer" href="https://search.google.com/search-console/about">google-search-console</a>没能抓取到已提交的搜录请求，分析了下被拒的原因，发现是之前在cloudflare后台配置安全策略时，有些防卫过当了</p>
 <h2 id="被各种拒绝"><a href="#被各种拒绝" class="headerlink" title="被各种拒绝"></a>被各种拒绝</h2><h3 id="Google-Search"><a href="#Google-Search" class="headerlink" title="Google Search"></a>Google Search</h3><p><img src="/img/2024/17193764491333.jpg"> <img src="/img/2024/17193763995149.jpg"></p>
 <h3 id="Bing-Search"><a href="#Bing-Search" class="headerlink" title="Bing Search"></a>Bing Search</h3><p><img src="/img/2024/17193766028578.jpg"> <img src="/img/2024/17193766303293.jpg"></p>
-<h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p>先前基于<code>AWF</code>规则，做了很多配置。主要思路是开放正常请求 和 主流搜索引擎爬虫访问，但是分析日志后发现，有一些来自Google和Bing的请求403了</p>
+<h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p>先前基于<code>WAF</code>规则，做了很多配置。主要思路是开放正常请求 和 主流搜索引擎爬虫访问，但是分析日志后发现，有一些来自Google和Bing的请求403了</p>
 <p>这些请求中，用户代理基本上没什么问题，但是协议有的是1.1、有的是1.2。另外多项规则设置中，匹配到爬虫并没有完全放开，以至于对后续规则进行了匹配，刚好卡在了阻止或需要验证的那一项。如上文图示的各种访问不到</p>
 <p>另外发现，自动程序这项开启后，对于Bing后台的检测请求会执行失败，比如检测站点地图或robot.txt等都会失败</p>
 <p><img src="/img/2024/17193774871526.jpg"></p>
