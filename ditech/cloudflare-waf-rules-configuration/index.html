@@ -168,7 +168,7 @@
                 <a target="_self" href="https://tomartisan.com/ditech/cloudflare-waf-rules-configuration/" itemprop="mainEntityOfPage"><span itemprop="headline">Cloudflare安全性规则设置</span></a>
             </h1>
             <div class="post-meta" itemprop="wordCount">
-                本文共计3155个字 |
+                本文共计3254个字 |
                 <span id="busuanzi_container_page_pv">
                     你是第&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位到访读者
                 </span>
@@ -188,13 +188,13 @@
 <p>所有本文提到的配置，均基于免费版配置。诸如需要升级套餐的配置不在讨论范围内。</p>
 </blockquote>
 <h3 id="WAF"><a href="#WAF" class="headerlink" title="WAF"></a>WAF</h3><h4 id="自定义规则"><a href="#自定义规则" class="headerlink" title="自定义规则"></a>自定义规则</h4><p>总览<br><img src="/img/2024/17193855189333.jpg"></p>
-<h5 id="跳过（爬虫放行）"><a href="#跳过（爬虫放行）" class="headerlink" title="跳过（爬虫放行）"></a>跳过（爬虫放行）</h5><pre><code class="hljs txt">(cf.client.bot) or (http.user_agent contains &quot;Googlebot&quot;) or (http.user_agent contains &quot;Google-InspectionTool&quot;) or (http.user_agent contains &quot;Google-Extended&quot;) or (http.user_agent contains &quot;Google-Display-Ads-Bot&quot;) or (http.user_agent contains &quot;Feedfetcher-Google&quot;) or (http.user_agent contains &quot;Mediapartners-Google&quot;) or (http.user_agent contains &quot;bing&quot;) or (http.user_agent contains &quot;bingbot&quot;) or (http.user_agent contains &quot;duckduckgo&quot;) or (http.user_agent contains &quot;facebookexternalhit&quot;)</code></pre>
+<h5 id="跳过（爬虫放行）"><a href="#跳过（爬虫放行）" class="headerlink" title="跳过（爬虫放行）"></a>跳过（爬虫放行）</h5><pre><code class="hljs txt">(cf.client.bot) or (http.user_agent contains &quot;Googlebot&quot;) or (http.user_agent contains &quot;Google-InspectionTool&quot;) or (http.user_agent contains &quot;Google-Extended&quot;) or (http.user_agent contains &quot;Google-Display-Ads-Bot&quot;) or (http.user_agent contains &quot;Feedfetcher-Google&quot;) or (http.user_agent contains &quot;Mediapartners-Google&quot;) or (http.user_agent contains &quot;bing&quot;) or (http.user_agent contains &quot;bingbot&quot;) or (http.user_agent contains &quot;duckduckgo&quot;) or (http.user_agent contains &quot;facebookexternalhit&quot;) or (http.user_agent contains &quot;dproxy/1.0&quot;) or (http.user_agent contains &quot;disqus.com&quot;)</code></pre>
 
-<p>需要注意的是，在<code>要跳过的 WAF 组件</code>里，需要勾选一下你想跳过的检查，<strong>否则会出现误伤</strong>。之前爬虫被拒，极大可能就是这里没处理好</p>
+<p>其中<code>dproxy/1.0</code>及<code>disqus.com</code>是对<code>Disqus</code>评论组件放行，如果站点加了类似的三方模块，需要单独设置一下。<br>另外需要注意的是，在<code>要跳过的 WAF 组件</code>里，需要勾选一下你想跳过的检查，<strong>否则会出现误伤</strong>。之前爬虫被拒，极大可能就是这里没处理好</p>
 <p><img src="/img/2024/17193862084969.jpg"></p>
-<h5 id="托管质疑（恶意流量验证）"><a href="#托管质疑（恶意流量验证）" class="headerlink" title="托管质疑（恶意流量验证）"></a>托管质疑（恶意流量验证）</h5><pre><code class="hljs txt">(ip.geoip.country in &#123;&quot;T1&quot;&#125;) or (cf.threat_score ge 15 and not cf.client.bot) or (not http.user_agent contains &quot;Mozilla/&quot;) or (not http.request.version in &#123;&quot;HTTP/1.2&quot; &quot;HTTP/2&quot; &quot;HTTP/3&quot; &quot;SPDY/3.1&quot;&#125;) or (http.user_agent contains &quot;dproxy/1.0&quot;)</code></pre>
+<h5 id="托管质疑（恶意流量验证）"><a href="#托管质疑（恶意流量验证）" class="headerlink" title="托管质疑（恶意流量验证）"></a>托管质疑（恶意流量验证）</h5><pre><code class="hljs txt">(ip.geoip.country in &#123;&quot;T1&quot;&#125;) or (not http.user_agent contains &quot;Mozilla/&quot;) or (not http.request.version in &#123;&quot;HTTP/1.2&quot; &quot;HTTP/2&quot; &quot;HTTP/3&quot; &quot;SPDY/3.1&quot;&#125;) or (cf.threat_score ge 15 and not cf.client.bot)</code></pre>
 
-<p>以上规则含义：<code>非正常代理请求</code> 或 <code>匿名网络请求</code> 或 <code>HTTP1.2以下协议</code> 均发出质疑，其中<code>dproxy/1.0</code>是对<code>Disqus</code>评论组件放行。</p>
+<p>以上规则含义：<code>非正常代理请求</code> 或 <code>匿名网络请求</code> 或 <code>HTTP1.2以下协议</code> 或 <code>威胁分数大于15</code> 均发出质疑</p>
 <h5 id="阻止（恶意流量阻止）"><a href="#阻止（恶意流量阻止）" class="headerlink" title="阻止（恶意流量阻止）"></a>阻止（恶意流量阻止）</h5><pre><code class="hljs txt">(http.user_agent eq &quot;&quot;) or (http.user_agent eq &quot;undefined&quot;) or (http.user_agent contains &quot;null&quot;) or (http.user_agent contains &quot;python&quot;) or (http.user_agent contains &quot;node&quot;) or (http.user_agent contains &quot;Go-http&quot;) or (http.user_agent contains &quot;Java&quot;) or (http.user_agent contains &quot;libweb&quot;) or (http.user_agent contains &quot;libwww&quot;) or (http.user_agent contains &quot;PHPCrawl&quot;) or (http.user_agent contains &quot;PyCurl&quot;) or (http.user_agent contains &quot;Gscan&quot;) or (http.user_agent contains &quot;scanbot&quot;) or (http.user_agent contains &quot;WPScan&quot;) or (http.request.uri.path in &#123;&quot;/admin&quot; &quot;/login&quot; &quot;/user&quot; &quot;/.git&quot; &quot;/www&quot; &quot;/wp-content&quot; &quot;/wp-admin&quot; &quot;//&quot; &quot;/wp&quot; &quot;/shop&quot;&#125;)</code></pre>
 
 <p>对于<code>空代理</code>、<code>代码扫描</code>、<code>网站扫描工具</code>、<code>特定目录频繁（试探）</code>访问的都要阻止，这里可以根据安全线事件中的日志去分析，那些流量请求需要毙掉</p>
