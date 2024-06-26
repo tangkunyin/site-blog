@@ -1,3 +1,4 @@
+https://tomartisan.com/ditech/cloudflare-waf-rules-configuration/
 https://tomartisan.com/about/
 https://tomartisan.com/groceries/use-gulp-to-speed-hexo/
 https://tomartisan.com/prodev/prepare-to-dev-desktop/
@@ -91,6 +92,7 @@ https://tomartisan.com/tags/life/
 https://tomartisan.com/tags/traveling/
 https://tomartisan.com/tags/projectx/
 https://tomartisan.com/tags/backend/
+https://tomartisan.com/tags/website/
 https://tomartisan.com/categories/prodev/
 https://tomartisan.com/categories/groceries/
 https://tomartisan.com/categories/ditech/
