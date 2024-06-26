@@ -1,4 +1,312 @@
-<!DOCTYPE HTML><html class="no-js" lang="zh-Hans"><head><!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=https://tomartisan.com/warn.html"><![endif]--><meta charset="utf-8"><title>cloudflare安全性规则设置 | Tomartisan(托码特人)</title><meta name="keywords" content="Cloudflare，Cloudflare防火墙，Cloudflare安全性，Cloudflare安全规则设置"><meta name="description" content="关于Cloudflare安全性规则配置下，如何优化爬虫的实践。如安全性设置不当，不但会导致站点收录受影响，也会影响网站安全防御效果。"><meta name="author" content="托码斯(https://tangkunyin.com)"><meta name="applicable-device" content="pc,mobile"><meta name="format-detection" content="telephone=no,email=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Tomartisan(托码特人)"><meta name="renderer" content="webkit"><meta name="force-rendering" content="webkit"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta property="og:type" content="article"><meta property="og:title" content="cloudflare安全性规则设置 | Tomartisan(托码特人)"><meta property="og:description" content="关于Cloudflare安全性规则配置下，如何优化爬虫的实践。如安全性设置不当，不但会导致站点收录受影响，也会影响网站安全防御效果。"><meta property="og:url" content="https://tomartisan.com"><meta property="og:site_name" content="Tomartisan(托码特人)"><link rel="dns-prefetch" href="https://tomartisan.com"><link rel="preload" href="https://tomartisan.com/css/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://tomartisan.com/css/JSimple.min.css" as="style"><link rel="preload" href="https://tomartisan.com/js/SimpleCore.min.js" as="script"><link rel="preload" href="https://tomartisan.com/images/avatar.webp" as="image" type="image/webp"><link rel="preload" href="https://tomartisan.com/images/cover-day.webp" as="image" type="image/webp"><link rel="preconnect" href="https://tomartisan.disqus.com"><link rel="preconnect" href="https://c.disquscdn.com"><link rel="icon" type="image/svg+xml" href="https://tomartisan.com/images/favicon.svg"><link rel="alternate icon" type="image/png" href="https://tomartisan.com/images/favicon.png"><link rel="alternate" type="application/xml" title="Site Map" href="https://tomartisan.com/sitemap.xml"><link rel="canonical" href="https://tomartisan.com/ditech/cloudflare-waf-rules-configuration/"><link rel="stylesheet" href="/css/JSimple.min.css"><style id="highl_css"></style><script>!function(t,e,n,c,a,r,s){t[n]=t[n]||function(){(t[n].q=t[n].q||[]).push(arguments)},(r=e.createElement(c)).async=1,r.src="https://www.clarity.ms/tag/mm174bqjn4",(s=e.getElementsByTagName(c)[0]).parentNode.insertBefore(r,s)}(window,document,"clarity","script")</script><meta name="generator" content="Hexo 7.1.1"></head><body><div id="nav"><nav class="nav-menu"><a class="site-name current" href="/" title="TM">TM</a><a class="site-index current" href="/"><i class="fa fa-home"></i> <span>首页</span></a><a href="/archives" title="归档"><i class="fa fa-archives"></i> <span>归档</span></a><a href="/tags" title="标签"><i class="fa fa-tags"></i> <span>标签</span></a><a href="/about" title="关于"><i class="fa fa-question-circle"></i> <span>关于</span></a></nav></div><div class="nav-user"><a class="btn-search" title="search bar" href="#"><i class="fa fa-search"></i></a><a class="btn-read-mode" title="readMode bar" href="#"><i class="fa fa-sun-o"></i></a><a class="btn-sns-qr" href="javascript:" rel="external nofollow noreferrer"><i class="fa fa-weixin"></i></a></div><div id="wrapper" class="clearfix"><div id="body"><div class="main" id="main"><div id="cover"><img class="cover-img" src="/images/cover-day.webp" alt="cover-img" loading="lazy"><div class="cover-info"><img class="avatar" src="/images/avatar.webp" width="100" alt="avatar" loading="lazy"><h1>托码特人</h1><h3>用代码摇滚这个世界</h3><h4>一个关注科技与人文的技术博客</h4><div class="cover-sns"><div class="btn btn-medium"><a href="https://tomartisan.medium.com" title="medium" rel="external nofollow noopener" target="_blank"><i class="fa fa-medium"></i></a></div><div class="btn btn-youtube"><a href="https://www.youtube.com/@itomartisan" title="youtube" rel="external nofollow noopener" target="_blank"><i class="fa fa-youtube"></i></a></div><div class="btn btn-twitter"><a href="https://x.com/tomartisan" title="twitter" rel="external nofollow noopener" target="_blank"><i class="fa fa-twitter"></i></a></div><div class="btn btn-reddit"><a href="https://www.reddit.com/user/tomartisan" title="reddit" rel="external nofollow noopener" target="_blank"><i class="fa fa-reddit"></i></a></div></div></div></div><div class="page-title"><ul><li><a href="/">最新</a></li><li><a href="/categories/prodev" data-name="产品研发">产品研发</a></li><li class="active"><a href="/categories/ditech" data-name="数码科技">数码科技</a></li><li><a href="/categories/hulife" data-name="人文生活">人文生活</a></li><li><a href="/categories/groceries" data-name="杂货铺">杂货铺</a></li><li class="page-search"><form id="search" class="search-form"><input type="text" readonly id="local-search-input-tip" placeholder="读物检索~"> <button type="button" disabled class="search-form-submit"><i class="fa fa-search"></i></button></form></li></ul></div><div class="main-inner"><article class="post" itemscope itemtype="https://schema.org/BlogPosting"><div class="post-header"><div class="post-author clearfix" itemscope itemtype="https://schema.org/Person"><a class="avatar fleft" target="_blank" href="https://bento.me/tomartisan" rel="author noopener external nofollow noreferrer"><img width="48" src="/images/avatar.webp" alt="avatar" itemprop="image"></a><p><span class="label">作者</span> <a target="_blank" rel="noopener external nofollow noreferrer" href="https://bento.me/tomartisan" itemprop="url"><span itemprop="name">托码斯</span></a> <span itemprop="datePublished" content="2024-06-26T12:21:23.000+08:00">最后编辑于&nbsp;2024-06-26</span></p><p itemprop="description">一个自在独行的「手艺人」</p></div><h1 class="post-title"><a target="_self" href="https://tomartisan.com/ditech/cloudflare-waf-rules-configuration/" itemprop="mainEntityOfPage"><span itemprop="headline">Cloudflare安全性规则设置</span></a></h1><div class="post-meta" itemprop="wordCount">本文共计3159个字 | <span id="busuanzi_container_page_pv">你是第&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位到访读者</span></div></div><div class="post-content markdown-body" itemprop="articleBody"><p>**<a target="_blank" rel="noopener external nofollow noreferrer" href="https://developers.cloudflare.com/">Cloudflare</a>**是个好东西，至于有多好、好在哪这里就不再絮叨，具体可以去问ChatGPT。总之对于一个开发者来说，不知道或还没用上的，算是很大的损失吧…本文将针对其安全性配置，尤其是在优化爬虫和恶意流量攻击之间做一个配置指南。</p><p>因为前段时间发现有恶意扫描请求到我的站点，看了下Web攻防这块，恰好cloudflare自带各类安全设置，所以就摸索了下、配置了若干…</p><p>后来发现<a target="_blank" rel="noopener external nofollow noreferrer" href="https://search.google.com/search-console/about">google-search-console</a>没能抓取到已提交的搜录请求，分析了下被拒的原因，发现是之前在cloudflare后台配置安全策略时，有些防卫过当了</p><h2 id="被各种拒绝"><a href="#被各种拒绝" class="headerlink" title="被各种拒绝"></a>被各种拒绝</h2><h3 id="Google-Search"><a href="#Google-Search" class="headerlink" title="Google Search"></a>Google Search</h3><p><img src="/img/2024/17193764491333.jpg"> <img src="/img/2024/17193763995149.jpg"></p><h3 id="Bing-Search"><a href="#Bing-Search" class="headerlink" title="Bing Search"></a>Bing Search</h3><p><img src="/img/2024/17193766028578.jpg"> <img src="/img/2024/17193766303293.jpg"></p><h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p>先前基于<code>AWF</code>规则，做了很多配置。主要思路是开放正常请求 和 主流搜索引擎爬虫访问，但是分析日志后发现，有一些来自Google和Bing的请求403了</p><p>这些请求中，用户代理基本上没什么问题，但是协议有的是1.1、有的是1.2。另外多项规则设置中，匹配到爬虫并没有完全放开，以至于对后续规则进行了匹配，刚好卡在了阻止或需要验证的那一项。如上文图示的各种访问不到</p><p>另外发现，自动程序这项开启后，对于Bing后台的检测请求会执行失败，比如检测站点地图或robot.txt等都会失败</p><p><img src="/img/2024/17193774871526.jpg"></p><h2 id="优化后的配置项"><a href="#优化后的配置项" class="headerlink" title="优化后的配置项"></a>优化后的配置项</h2><blockquote><p>所有本文提到的配置，均基于免费版配置。诸如需要升级套餐的配置不在讨论范围内。</p></blockquote><h3 id="WAF"><a href="#WAF" class="headerlink" title="WAF"></a>WAF</h3><h4 id="自定义规则"><a href="#自定义规则" class="headerlink" title="自定义规则"></a>自定义规则</h4><p>总览<br><img src="/img/2024/17193855189333.jpg"></p><h5 id="跳过（爬虫放行）"><a href="#跳过（爬虫放行）" class="headerlink" title="跳过（爬虫放行）"></a>跳过（爬虫放行）</h5><pre><code class="hljs txt">(cf.client.bot) or (http.user_agent contains &quot;Googlebot&quot;) or (http.user_agent contains &quot;Google-InspectionTool&quot;) or (http.user_agent contains &quot;Google-Extended&quot;) or (http.user_agent contains &quot;Google-Display-Ads-Bot&quot;) or (http.user_agent contains &quot;Feedfetcher-Google&quot;) or (http.user_agent contains &quot;Mediapartners-Google&quot;) or (http.user_agent contains &quot;bing&quot;) or (http.user_agent contains &quot;bingbot&quot;) or (http.user_agent contains &quot;duckduckgo&quot;) or (http.user_agent contains &quot;facebookexternalhit&quot;)</code></pre><p>需要注意的是，在<code>要跳过的 WAF 组件</code>里，需要勾选一下你想跳过的检查，<strong>否则会出现误伤</strong>。之前爬虫被拒，极大可能就是这里没处理好</p><p><img src="/img/2024/17193862084969.jpg"></p><h5 id="托管质疑（恶意流量验证）"><a href="#托管质疑（恶意流量验证）" class="headerlink" title="托管质疑（恶意流量验证）"></a>托管质疑（恶意流量验证）</h5><pre><code class="hljs txt">(ip.geoip.country in &#123;&quot;T1&quot;&#125;) or (cf.threat_score ge 15 and not cf.client.bot) or (not http.user_agent contains &quot;Mozilla/&quot;) or (not http.request.version in &#123;&quot;HTTP/1.2&quot; &quot;HTTP/2&quot; &quot;HTTP/3&quot; &quot;SPDY/3.1&quot;&#125;) or (http.user_agent contains &quot;dproxy/1.0&quot;)</code></pre><p>以上规则含义：<code>非正常代理请求</code> 或 <code>匿名网络请求</code> 或 <code>HTTP1.2以下协议</code> 均发出质疑，其中<code>dproxy/1.0</code>是对<code>Disqus</code>评论组件放行。</p><h5 id="阻止（恶意流量阻止）"><a href="#阻止（恶意流量阻止）" class="headerlink" title="阻止（恶意流量阻止）"></a>阻止（恶意流量阻止）</h5><pre><code class="hljs txt">(http.user_agent eq &quot;&quot;) or (http.user_agent eq &quot;undefined&quot;) or (http.user_agent contains &quot;null&quot;) or (http.user_agent contains &quot;python&quot;) or (http.user_agent contains &quot;node&quot;) or (http.user_agent contains &quot;Go-http&quot;) or (http.user_agent contains &quot;Java&quot;) or (http.user_agent contains &quot;libweb&quot;) or (http.user_agent contains &quot;libwww&quot;) or (http.user_agent contains &quot;PHPCrawl&quot;) or (http.user_agent contains &quot;PyCurl&quot;) or (http.user_agent contains &quot;Gscan&quot;) or (http.user_agent contains &quot;scanbot&quot;) or (http.user_agent contains &quot;WPScan&quot;) or (http.request.uri.path in &#123;&quot;/admin&quot; &quot;/login&quot; &quot;/user&quot; &quot;/.git&quot; &quot;/www&quot; &quot;/wp-content&quot; &quot;/wp-admin&quot; &quot;//&quot; &quot;/wp&quot; &quot;/shop&quot;&#125;)</code></pre><p>对于<code>空代理</code>、<code>代码扫描</code>、<code>网站扫描工具</code>、<code>特定目录频繁（试探）</code>访问的都要阻止，这里可以根据安全线事件中的日志去分析，那些流量请求需要毙掉</p><h4 id="速率限制规则"><a href="#速率限制规则" class="headerlink" title="速率限制规则"></a>速率限制规则</h4><p>我的配置很简单，基于站点特定内容或目录，进行限速。具体速率限制条件，可根据自己的情况调整。我的是10秒内5000，也就是QPS 500以上就限速…</p><pre><code class="hljs txt">(http.request.uri.path in &#123;&quot;/&quot; &quot;/about&quot; &quot;/categories&quot;&#125;)</code></pre><p>如果是用来做API服务的，可以（根据实际情况）酌情调大…</p><h3 id="自动程序"><a href="#自动程序" class="headerlink" title="自动程序"></a>自动程序</h3><p>最近新出了个<code>AI Scrapers and Crawlers</code>，看意思是用来屏蔽大模型爬虫抓网站内容训练的。如果没特殊问题开放即可</p><p>对于这两项，我目前都关闭了。特别是<code>自动程序攻击模式</code>这个，貌似会误伤爬虫或爬虫管理后台的检测服务</p><p><img src="/img/2024/17193852598085.jpg"></p><h3 id="DDoS"><a href="#DDoS" class="headerlink" title="DDoS"></a>DDoS</h3><ol><li>规则集：阻止</li><li>规则集敏感度：高</li></ol><h3 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h3><ol><li>安全级别选<code>高</code>（一般不要选：I’m Under Attack，顾名思义这个是当你正在被黑时的开关）；</li><li>质询通过期，选<code>30分钟</code>就够了。这个意思是质询一次后，隔多久再发出质询；</li><li>浏览器完整性检查：打开</li></ol><h3 id="结果验证"><a href="#结果验证" class="headerlink" title="结果验证"></a>结果验证</h3><p>重新摁下站点地图提交后</p><p><img src="/img/2024/17193833032214.jpg"><br><img src="/img/2024/17193837635413.jpg"></p><p>在Cloudflare的后台可以看到，来自搜索引擎方面的检测请求已经跳过</p><p><img src="/img/2024/17193834396728.jpg"></p></div><div class="post-tool"><a class="btn-thumbs-up" href="javascript:void(0);" rel="external nofollow noreferrer" data-cid="52" title="95"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 赞赏</a></div><div class="post-tags">标签： <a href="/tags/technology/">科技</a> <a href="/tags/website/">建站</a></div></article><p style="text-align:center">请注意: 本文所述内容及观点仅代表个人看法，由于知识水平有限，行文难免出现差错，欢迎留言交流。谢谢！</p><div id="disqus_thread"></div><script>if("https://tomartisan.com"===location.origin){var disqus_config=function(){this.page.url=location.href,this.page.identifier=location.pathname};!function(){var t=document,i=t.createElement("script");i.src="https://tomartisan.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(i)}()}</script><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener external nofollow noreferrer" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div></div></div><footer class="footer"><div class="footer-inner" style="text-align:center"><p>本站已建立&nbsp;<a href="/about/#我的那些青葱岁月" id="siteBuildingTime"></a>&nbsp;天， <span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span><br>©2017-<span id="cpYear"></span> 基于&nbsp;<a href="http://hexo.io" target="_blank" rel="external nofollow noopener" title="Hexo">Hexo</a> ，主题采用&nbsp;&nbsp;<a href="https://github.com/tangkunyin/hexo-theme-jsimple" target="_blank" rel="external nofollow noopener" title="JSimple theme">JSimple</a> ，作者&nbsp;<a href="https://tangkunyin.com" target="_blank" title="author">托码斯</a> ，托管于 <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener" title="GitHub Pages">GitHub Pages</a> ，<a href="https://tomartisan.com/sitemap.xml" title="网站地图" rel="alternate" type="application/xml">网站地图</a></p></div></footer></div><div class="popup search-popup local-search-popup"><div class="local-search-header clearfix"><span class="search-icon"><i class="fa fa-search"></i></span><span class="popup-btn-close"><i class="fa fa-times-circle"></i></span><div class="local-search-input-wrapper"><input id="local-search-input" spellcheck="true" type="text" autocomplete="off" placeholder="请输入查询关键词"></div></div><div id="local-search-result"></div></div><div class="fixed-btn"><a class="btn-gotop" href="javascript:" rel="external nofollow noreferrer"><i class="fa fa-angle-up"></i></a></div><script>(function() {
+<!DOCTYPE HTML>
+<html class="no-js" lang="zh-Hans">
+<head>
+    <!--[if lte IE 9]>
+    <meta http-equiv="refresh" content="0;url=https://tomartisan.com/warn.html">
+<![endif]-->
+
+<meta charset="utf-8" />
+<title>cloudflare安全性规则设置 | Tomartisan(托码特人)</title>
+<meta name="keywords" content="Cloudflare，Cloudflare防火墙，Cloudflare安全性，Cloudflare安全规则设置" />
+<meta name="description" content="关于Cloudflare安全性规则配置下，如何优化爬虫的实践。如安全性设置不当，不但会导致站点收录受影响，也会影响网站安全防御效果。" />
+<meta name="author" content="托码斯(https://tangkunyin.com)" />
+<meta name="applicable-device" content="pc,mobile" />
+<meta name="format-detection" content="telephone=no,email=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Tomartisan(托码特人)" />
+<meta name="renderer" content="webkit" />
+<meta name="force-rendering" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="cloudflare安全性规则设置 | Tomartisan(托码特人)" />
+<meta property="og:description" content="关于Cloudflare安全性规则配置下，如何优化爬虫的实践。如安全性设置不当，不但会导致站点收录受影响，也会影响网站安全防御效果。" />
+<meta property="og:url" content="https://tomartisan.com" />
+<meta property="og:site_name" content="Tomartisan(托码特人)" />
+
+<link rel="dns-prefetch" href="https://tomartisan.com" />
+<link rel="preload" href="https://tomartisan.com/css/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin="anonymous" />
+<link rel="preload" href="https://tomartisan.com/css/JSimple.min.css" as="style" />
+<link rel="preload" href="https://tomartisan.com/js/SimpleCore.min.js" as="script" />
+<link rel="preload" href="https://tomartisan.com/images/avatar.webp" as="image" type="image/webp" />
+<link rel="preload" href="https://tomartisan.com/images/cover-day.webp" as="image" type="image/webp" />
+
+    <link rel="preconnect" href="https://tomartisan.disqus.com" />
+    <link rel="preconnect" href="https://c.disquscdn.com" />
+
+<link rel="icon" type="image/svg+xml" href="https://tomartisan.com/images/favicon.svg" />
+<link rel="alternate icon" type="image/png" href="https://tomartisan.com/images/favicon.png" />
+<link rel="alternate" type="application/xml" title="Site Map" href="https://tomartisan.com/sitemap.xml"/>
+<link rel="canonical" href="https://tomartisan.com/ditech/cloudflare-waf-rules-configuration/" />
+
+
+<link rel="stylesheet" href="/css/JSimple.min.css">
+
+<style id="highl_css"></style>
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "mm174bqjn4");
+</script>
+<meta name="generator" content="Hexo 7.1.1"></head>
+<body>
+<div id="nav">
+    <nav class="nav-menu">
+        <a class="site-name current" href="/" title="TM">TM</a>
+        <a class="site-index current" href="/"><i class="fa fa-home"></i><span>首页</span></a>
+        <a href="/archives" title="归档"><i class="fa fa-archives"></i><span>归档</span></a>
+        <a href="/tags" title="标签"><i class="fa fa-tags"></i><span>标签</span></a>
+        <!-- custom single page of menus -->
+        
+        
+        <a href="/about" title="关于">
+            <i class="fa fa-question-circle"></i>
+            <span>关于</span>
+        </a>
+        
+    </nav>
+</div>
+
+<div class="nav-user">
+    <a class="btn-search" title="search bar" href="#" ><i class="fa fa-search"></i></a>
+    <a class="btn-read-mode" title="readMode bar" href="#" ><i class="fa fa-sun-o"></i></a>
+    
+        <a class="btn-sns-qr" href="javascript:" rel="external nofollow noreferrer"><i class="fa fa-weixin"></i></a>
+    
+</div>
+<div id="wrapper" class="clearfix">
+    <div id="body">
+        <div class="main" id="main">
+            <div id="cover">
+    <img class="cover-img" src="/images/cover-day.webp" alt="cover-img" loading="lazy"/>
+    <div class="cover-info">
+        <img class="avatar" src="/images/avatar.webp" width="100" alt="avatar" loading="lazy"/>
+        <h1>托码特人</h1>
+        <h3>用代码摇滚这个世界</h3>
+        <h4>一个关注科技与人文的技术博客</h4>
+        <div class="cover-sns">
+            
+    <div class="btn btn-medium">
+        <a href="https://tomartisan.medium.com" title="medium" rel="external nofollow noopener" target="_blank">
+            <i class="fa fa-medium"></i>
+        </a>
+    </div>
+
+    <div class="btn btn-youtube">
+        <a href="https://www.youtube.com/@itomartisan" title="youtube" rel="external nofollow noopener" target="_blank">
+            <i class="fa fa-youtube"></i>
+        </a>
+    </div>
+
+    <div class="btn btn-twitter">
+        <a href="https://x.com/tomartisan" title="twitter" rel="external nofollow noopener" target="_blank">
+            <i class="fa fa-twitter"></i>
+        </a>
+    </div>
+
+    <div class="btn btn-reddit">
+        <a href="https://www.reddit.com/user/tomartisan" title="reddit" rel="external nofollow noopener" target="_blank">
+            <i class="fa fa-reddit"></i>
+        </a>
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+            <div class="page-title">
+    <ul>
+        <li><a href="/">最新</a></li>
+        
+            
+                <li class="">
+                    <a href="/categories/prodev" data-name="产品研发">产品研发</a>
+                </li>
+            
+                <li class="active">
+                    <a href="/categories/ditech" data-name="数码科技">数码科技</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/hulife" data-name="人文生活">人文生活</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/groceries" data-name="杂货铺">杂货铺</a>
+                </li>
+            
+        
+        <li class="page-search">
+    <form id="search" class="search-form">
+        <input type="text"
+               readonly="readonly"
+               id="local-search-input-tip"
+               placeholder="读物检索~" />
+        <button type="button" disabled="disabled" class="search-form-submit"><i class="fa fa-search"></i></button>
+    </form>
+</li>
+
+    </ul>
+</div>
+<div class="main-inner">
+    <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+        <div class="post-header">
+            <div class="post-author clearfix" itemscope itemtype="https://schema.org/Person">
+                <a class="avatar fleft" target="_blank" href="https://bento.me/tomartisan" rel="author noopener external nofollow noreferrer">
+                    <img width="48" src="/images/avatar.webp" alt="avatar" itemprop="image"/>
+                </a>
+                <p><span class="label">作者</span>
+                    <a target="_blank" rel="noopener external nofollow noreferrer" href="https://bento.me/tomartisan" itemprop="url"><span itemprop="name">托码斯</span></a>
+                    <span itemprop="datePublished" content="2024-06-26T12:21:23.000+08:00">最后编辑于&nbsp;2024-06-26</span>
+                </p>
+                <p itemprop="description">一个自在独行的「手艺人」</p>
+            </div>
+            <h1 class="post-title">
+                <a target="_self" href="https://tomartisan.com/ditech/cloudflare-waf-rules-configuration/" itemprop="mainEntityOfPage"><span itemprop="headline">Cloudflare安全性规则设置</span></a>
+            </h1>
+            <div class="post-meta" itemprop="wordCount">
+                本文共计3155个字 |
+                <span id="busuanzi_container_page_pv">
+                    你是第&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位到访读者
+                </span>
+            </div>
+        </div>
+        <div class="post-content markdown-body" itemprop="articleBody">
+            <p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://developers.cloudflare.com/">Cloudflare</a>是个好东西，至于有多好、好在哪这里就不再絮叨，具体可以去问ChatGPT。总之对于一个开发者来说，不知道或还没用上的，算是很大的损失吧…本文将针对其安全性配置，尤其是在优化爬虫和恶意流量攻击之间做一个配置指南。</p>
+<p>因为前段时间发现有恶意扫描请求到我的站点，看了下Web攻防这块，恰好cloudflare自带各类安全设置，所以就摸索了下、配置了若干…</p>
+<p>后来发现<a target="_blank" rel="noopener external nofollow noreferrer" href="https://search.google.com/search-console/about">google-search-console</a>没能抓取到已提交的搜录请求，分析了下被拒的原因，发现是之前在cloudflare后台配置安全策略时，有些防卫过当了</p>
+<h2 id="被各种拒绝"><a href="#被各种拒绝" class="headerlink" title="被各种拒绝"></a>被各种拒绝</h2><h3 id="Google-Search"><a href="#Google-Search" class="headerlink" title="Google Search"></a>Google Search</h3><p><img src="/img/2024/17193764491333.jpg"> <img src="/img/2024/17193763995149.jpg"></p>
+<h3 id="Bing-Search"><a href="#Bing-Search" class="headerlink" title="Bing Search"></a>Bing Search</h3><p><img src="/img/2024/17193766028578.jpg"> <img src="/img/2024/17193766303293.jpg"></p>
+<h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p>先前基于<code>AWF</code>规则，做了很多配置。主要思路是开放正常请求 和 主流搜索引擎爬虫访问，但是分析日志后发现，有一些来自Google和Bing的请求403了</p>
+<p>这些请求中，用户代理基本上没什么问题，但是协议有的是1.1、有的是1.2。另外多项规则设置中，匹配到爬虫并没有完全放开，以至于对后续规则进行了匹配，刚好卡在了阻止或需要验证的那一项。如上文图示的各种访问不到</p>
+<p>另外发现，自动程序这项开启后，对于Bing后台的检测请求会执行失败，比如检测站点地图或robot.txt等都会失败</p>
+<p><img src="/img/2024/17193774871526.jpg"></p>
+<h2 id="优化后的配置项"><a href="#优化后的配置项" class="headerlink" title="优化后的配置项"></a>优化后的配置项</h2><blockquote>
+<p>所有本文提到的配置，均基于免费版配置。诸如需要升级套餐的配置不在讨论范围内。</p>
+</blockquote>
+<h3 id="WAF"><a href="#WAF" class="headerlink" title="WAF"></a>WAF</h3><h4 id="自定义规则"><a href="#自定义规则" class="headerlink" title="自定义规则"></a>自定义规则</h4><p>总览<br><img src="/img/2024/17193855189333.jpg"></p>
+<h5 id="跳过（爬虫放行）"><a href="#跳过（爬虫放行）" class="headerlink" title="跳过（爬虫放行）"></a>跳过（爬虫放行）</h5><pre><code class="hljs txt">(cf.client.bot) or (http.user_agent contains &quot;Googlebot&quot;) or (http.user_agent contains &quot;Google-InspectionTool&quot;) or (http.user_agent contains &quot;Google-Extended&quot;) or (http.user_agent contains &quot;Google-Display-Ads-Bot&quot;) or (http.user_agent contains &quot;Feedfetcher-Google&quot;) or (http.user_agent contains &quot;Mediapartners-Google&quot;) or (http.user_agent contains &quot;bing&quot;) or (http.user_agent contains &quot;bingbot&quot;) or (http.user_agent contains &quot;duckduckgo&quot;) or (http.user_agent contains &quot;facebookexternalhit&quot;)</code></pre>
+
+<p>需要注意的是，在<code>要跳过的 WAF 组件</code>里，需要勾选一下你想跳过的检查，<strong>否则会出现误伤</strong>。之前爬虫被拒，极大可能就是这里没处理好</p>
+<p><img src="/img/2024/17193862084969.jpg"></p>
+<h5 id="托管质疑（恶意流量验证）"><a href="#托管质疑（恶意流量验证）" class="headerlink" title="托管质疑（恶意流量验证）"></a>托管质疑（恶意流量验证）</h5><pre><code class="hljs txt">(ip.geoip.country in &#123;&quot;T1&quot;&#125;) or (cf.threat_score ge 15 and not cf.client.bot) or (not http.user_agent contains &quot;Mozilla/&quot;) or (not http.request.version in &#123;&quot;HTTP/1.2&quot; &quot;HTTP/2&quot; &quot;HTTP/3&quot; &quot;SPDY/3.1&quot;&#125;) or (http.user_agent contains &quot;dproxy/1.0&quot;)</code></pre>
+
+<p>以上规则含义：<code>非正常代理请求</code> 或 <code>匿名网络请求</code> 或 <code>HTTP1.2以下协议</code> 均发出质疑，其中<code>dproxy/1.0</code>是对<code>Disqus</code>评论组件放行。</p>
+<h5 id="阻止（恶意流量阻止）"><a href="#阻止（恶意流量阻止）" class="headerlink" title="阻止（恶意流量阻止）"></a>阻止（恶意流量阻止）</h5><pre><code class="hljs txt">(http.user_agent eq &quot;&quot;) or (http.user_agent eq &quot;undefined&quot;) or (http.user_agent contains &quot;null&quot;) or (http.user_agent contains &quot;python&quot;) or (http.user_agent contains &quot;node&quot;) or (http.user_agent contains &quot;Go-http&quot;) or (http.user_agent contains &quot;Java&quot;) or (http.user_agent contains &quot;libweb&quot;) or (http.user_agent contains &quot;libwww&quot;) or (http.user_agent contains &quot;PHPCrawl&quot;) or (http.user_agent contains &quot;PyCurl&quot;) or (http.user_agent contains &quot;Gscan&quot;) or (http.user_agent contains &quot;scanbot&quot;) or (http.user_agent contains &quot;WPScan&quot;) or (http.request.uri.path in &#123;&quot;/admin&quot; &quot;/login&quot; &quot;/user&quot; &quot;/.git&quot; &quot;/www&quot; &quot;/wp-content&quot; &quot;/wp-admin&quot; &quot;//&quot; &quot;/wp&quot; &quot;/shop&quot;&#125;)</code></pre>
+
+<p>对于<code>空代理</code>、<code>代码扫描</code>、<code>网站扫描工具</code>、<code>特定目录频繁（试探）</code>访问的都要阻止，这里可以根据安全线事件中的日志去分析，那些流量请求需要毙掉</p>
+<h4 id="速率限制规则"><a href="#速率限制规则" class="headerlink" title="速率限制规则"></a>速率限制规则</h4><p>我的配置很简单，基于站点特定内容或目录，进行限速。具体速率限制条件，可根据自己的情况调整。我的是10秒内5000，也就是QPS 500以上就限速…</p>
+<pre><code class="hljs txt">(http.request.uri.path in &#123;&quot;/&quot; &quot;/about&quot; &quot;/categories&quot;&#125;)</code></pre>
+
+<p>如果是用来做API服务的，可以（根据实际情况）酌情调大…</p>
+<h3 id="自动程序"><a href="#自动程序" class="headerlink" title="自动程序"></a>自动程序</h3><p>最近新出了个<code>AI Scrapers and Crawlers</code>，看意思是用来屏蔽大模型爬虫抓网站内容训练的。如果没特殊问题开放即可</p>
+<p>对于这两项，我目前都关闭了。特别是<code>自动程序攻击模式</code>这个，貌似会误伤爬虫或爬虫管理后台的检测服务</p>
+<p><img src="/img/2024/17193852598085.jpg"></p>
+<h3 id="DDoS"><a href="#DDoS" class="headerlink" title="DDoS"></a>DDoS</h3><ol>
+<li>规则集：阻止</li>
+<li>规则集敏感度：高</li>
+</ol>
+<h3 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h3><ol>
+<li>安全级别选<code>高</code>（一般不要选：I’m Under Attack，顾名思义这个是当你正在被黑时的开关）；</li>
+<li>质询通过期，选<code>30分钟</code>就够了。这个意思是质询一次后，隔多久再发出质询；</li>
+<li>浏览器完整性检查：打开</li>
+</ol>
+<h3 id="结果验证"><a href="#结果验证" class="headerlink" title="结果验证"></a>结果验证</h3><p>重新摁下站点地图提交后</p>
+<p><img src="/img/2024/17193833032214.jpg"><br><img src="/img/2024/17193837635413.jpg"></p>
+<p>在Cloudflare的后台可以看到，来自搜索引擎方面的检测请求已经跳过</p>
+<p><img src="/img/2024/17193834396728.jpg"></p>
+
+            
+                
+            
+        </div>
+
+        
+            <div class="post-tool">
+                <a class="btn-thumbs-up" href="javascript:void(0);" rel="external nofollow noreferrer" data-cid="52" title="95">
+                    <i class="fa fa-thumbs-up" aria-hidden="true"></i> 赞赏
+                </a>
+            </div>
+        
+
+        
+        <div class="post-tags">标签：
+            
+            <a href="/tags/technology/">科技</a>
+            
+            <a href="/tags/website/">建站</a>
+            
+        </div>
+        
+    </article>
+    
+        <p style="text-align: center">请注意: 本文所述内容及观点仅代表个人看法，由于知识水平有限，行文难免出现差错，欢迎留言交流。谢谢！</p>
+    
+    
+    
+    
+        <div id="disqus_thread"></div>
+        <script>
+            if (location.origin === 'https://tomartisan.com') {
+                var disqus_config = function () {
+                    this.page.url = location.href;
+                    this.page.identifier = location.pathname;
+                };
+                (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://tomartisan.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            }
+        </script>
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener external nofollow noreferrer" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+
+</div>
+
+        </div><!-- end #main-->
+    </div><!-- end #body -->
+    <footer class="footer">
+    <div class="footer-inner" style="text-align: center">
+        <p>
+            本站已建立&nbsp;<a href="/about/#我的那些青葱岁月" id="siteBuildingTime"></a>&nbsp;天， <span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span><br/>
+            ©2017-<span id="cpYear"></span> 基于&nbsp;<a href="http://hexo.io" target="_blank" rel="external nofollow noopener" title="Hexo">Hexo</a>
+            ，主题采用&nbsp;&nbsp;<a href="https://github.com/tangkunyin/hexo-theme-jsimple" target="_blank" rel="external nofollow noopener" title="JSimple theme">JSimple</a>
+            ，作者&nbsp;<a href="https://tangkunyin.com" target="_blank" title="author">托码斯</a>
+            ，托管于 <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener" title="GitHub Pages">GitHub Pages</a>
+            ，<a href="https://tomartisan.com/sitemap.xml" title="网站地图" rel="alternate" type="application/xml">网站地图</a>
+        </p>
+    </div>
+</footer>
+</div>
+<!-- search pop -->
+<div class="popup search-popup local-search-popup">
+    <div class="local-search-header clearfix">
+        <span class="search-icon">
+            <i class="fa fa-search"></i>
+        </span>
+        <span class="popup-btn-close">
+            <i class="fa fa-times-circle"></i>
+        </span>
+        <div class="local-search-input-wrapper">
+            <input id="local-search-input"
+                   spellcheck="true"
+                   type="text"
+                   autocomplete="off"
+                   placeholder="请输入查询关键词"/>
+        </div>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+<div class="fixed-btn">
+    <a class="btn-gotop" href="javascript:" rel="external nofollow noreferrer"> <i class="fa fa-angle-up"></i></a>
+</div>
+<script type="text/javascript">
+    (function() {
         let jsi_config = {
             isPost: 'true',
             buildingTime: '05/26/2024',
@@ -17,4 +325,25 @@
             }
         
         window.jsi_config = jsi_config;
-    })()</script><script async src="/js/SimpleCore.min.js"></script><script defer src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script async id="dsq-count-scr" src="//tomartisan.disqus.com/count.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-9963MP8321"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-9963MP8321")</script></body></html>
+    })()
+</script>
+<script async src="/js/SimpleCore.min.js"></script>
+<script defer src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    
+        <script async id="dsq-count-scr" src="//tomartisan.disqus.com/count.js"></script>
+    
+
+<!-- google analytics -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9963MP8321"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-9963MP8321');
+    </script>
+
+</body>
+</html>
