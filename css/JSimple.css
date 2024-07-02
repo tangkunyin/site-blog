@@ -424,11 +424,11 @@ a.btn:hover {
 }
 
 .btn-github {
-    background-color: #999999;
+    background-color: #2a2a2a;
 }
 
 .btn-github:hover {
-    background-color: #2a2a2a;
+    background-color: #888888;
 }
 
 a.avatar img,
