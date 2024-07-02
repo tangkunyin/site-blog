@@ -1,4 +1,192 @@
-<!DOCTYPE HTML><html class="no-js" lang="zh-Hans"><head><!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=https://tomartisan.com/warn.html"><![endif]--><meta charset="utf-8"><title>codereview姿势探索 | Tomartisan(托码特人)</title><meta name="keywords" content="cr，codereview，代码审查，phabricator，phabricator guide"><meta name="description" content="关于代码审查的一些思考和实践整理，特别是Phabricator工具在macOS下的使用体验。"><meta name="author" content="托码斯(https://tangkunyin.com)"><meta name="applicable-device" content="pc,mobile"><meta name="format-detection" content="telephone=no,email=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Tomartisan(托码特人)"><meta name="renderer" content="webkit"><meta name="force-rendering" content="webkit"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta property="og:type" content="article"><meta property="og:title" content="codereview姿势探索 | Tomartisan(托码特人)"><meta property="og:description" content="关于代码审查的一些思考和实践整理，特别是Phabricator工具在macOS下的使用体验。"><meta property="og:url" content="https://tomartisan.com"><meta property="og:site_name" content="Tomartisan(托码特人)"><link rel="dns-prefetch" href="https://tomartisan.com"><link rel="preload" href="https://tomartisan.com/css/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://tomartisan.com/css/JSimple.min.css" as="style"><link rel="preload" href="https://tomartisan.com/js/SimpleCore.min.js" as="script"><link rel="preload" href="https://tomartisan.com/images/avatar.webp" as="image" type="image/webp"><link rel="preload" href="https://tomartisan.com/images/cover-day.webp" as="image" type="image/webp"><link rel="preconnect" href="https://tomartisan.disqus.com"><link rel="preconnect" href="https://c.disquscdn.com"><link rel="icon" type="image/svg+xml" href="https://tomartisan.com/images/favicon.svg"><link rel="alternate icon" type="image/png" href="https://tomartisan.com/images/favicon.png"><link rel="alternate" type="application/xml" title="Site Map" href="https://tomartisan.com/sitemap.xml"><link rel="canonical" href="https://tomartisan.com/prodev/codereview-explore/"><link rel="stylesheet" href="/css/JSimple.min.css"><style id="highl_css"></style><script>!function(t,e,n,c,a,r,s){t[n]=t[n]||function(){(t[n].q=t[n].q||[]).push(arguments)},(r=e.createElement(c)).async=1,r.src="https://www.clarity.ms/tag/mm174bqjn4",(s=e.getElementsByTagName(c)[0]).parentNode.insertBefore(r,s)}(window,document,"clarity","script")</script><meta name="generator" content="Hexo 7.1.1"></head><body><div id="nav"><nav class="nav-menu"><a class="site-name current" href="/" title="TM">TM</a><a class="site-index current" href="/"><i class="fa fa-home"></i> <span>首页</span></a><a href="/archives" title="归档"><i class="fa fa-archives"></i> <span>归档</span></a><a href="/tags" title="标签"><i class="fa fa-tags"></i> <span>标签</span></a><a href="/about" title="关于"><i class="fa fa-question-circle"></i> <span>关于</span></a></nav></div><div class="nav-user"><a class="btn-search" title="search bar" href="#"><i class="fa fa-search"></i></a><a class="btn-read-mode" title="readMode bar" href="#"><i class="fa fa-sun-o"></i></a><a class="btn-sns-qr" href="javascript:" rel="external nofollow noreferrer"><i class="fa fa-weixin"></i></a></div><div id="wrapper" class="clearfix"><div id="body"><div class="main" id="main"><div id="cover"><img class="cover-img" src="/images/cover-day.webp" alt="cover-img" loading="lazy"><div class="cover-info"><img class="avatar" src="/images/avatar.webp" width="100" alt="avatar" loading="lazy"><h1>托码特人</h1><h3>用代码摇滚这个世界</h3><h4>一个关注科技与人文的技术博客</h4><div class="cover-sns"><div class="btn btn-medium"><a href="https://tomartisan.medium.com" title="medium" rel="external nofollow noopener" target="_blank"><i class="fa fa-medium"></i></a></div><div class="btn btn-youtube"><a href="https://www.youtube.com/@itomartisan" title="youtube" rel="external nofollow noopener" target="_blank"><i class="fa fa-youtube"></i></a></div><div class="btn btn-twitter"><a href="https://x.com/tomartisan" title="twitter" rel="external nofollow noopener" target="_blank"><i class="fa fa-twitter"></i></a></div><div class="btn btn-reddit"><a href="https://www.reddit.com/user/tomartisan" title="reddit" rel="external nofollow noopener" target="_blank"><i class="fa fa-reddit"></i></a></div></div></div></div><div class="page-title"><ul><li><a href="/">最新</a></li><li class="active"><a href="/categories/prodev" data-name="产品研发">产品研发</a></li><li><a href="/categories/ditech" data-name="数码科技">数码科技</a></li><li><a href="/categories/hulife" data-name="人文生活">人文生活</a></li><li><a href="/categories/groceries" data-name="杂货铺">杂货铺</a></li><li class="page-search"><form id="search" class="search-form"><input type="text" readonly id="local-search-input-tip" placeholder="读物检索~"> <button type="button" disabled class="search-form-submit"><i class="fa fa-search"></i></button></form></li></ul></div><div class="main-inner"><article class="post" itemscope itemtype="https://schema.org/BlogPosting"><div class="post-header"><div class="post-author clearfix" itemscope itemtype="https://schema.org/Person"><a class="avatar fleft" target="_blank" href="https://bento.me/tomartisan" rel="author noopener external nofollow noreferrer"><img width="48" src="/images/avatar.webp" alt="avatar" itemprop="image"></a><p><span class="label">作者</span> <a target="_blank" rel="noopener external nofollow noreferrer" href="https://bento.me/tomartisan" itemprop="url"><span itemprop="name">托码斯</span></a> <span itemprop="datePublished" content="2020-08-26T17:15:42.000+08:00">最后编辑于&nbsp;2020-08-26</span></p><p itemprop="description">一个自在独行的「手艺人」</p></div><h1 class="post-title"><a target="_self" href="https://tomartisan.com/prodev/codereview-explore/" itemprop="mainEntityOfPage"><span itemprop="headline">CodeReview姿势探索</span></a></h1><div class="post-meta" itemprop="wordCount">本文共计2003个字 | <span id="busuanzi_container_page_pv">你是第&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位到访读者</span></div></div><div class="post-content markdown-body" itemprop="articleBody"><h2 id="Code-Review的意义"><a href="#Code-Review的意义" class="headerlink" title="Code Review的意义"></a>Code Review的意义</h2><p>code review是现代软件开发非常有意义的一种技术管理方法，其价值不止在于代码的准入和找bug，也是所有人技术交流和成长的一种手段，总结CR的意义，不限于：</p><ul><li>找出可能的坑</li><li>帮助新人成长</li><li>互相督促代码质量</li><li>互相学习设计理念及编码思路</li></ul><p>理想情况下所有代码合并都必须进行code review，并且必须CC整个组，让你的每一个合并都更认真地对待</p><h2 id="phabricator"><a href="#phabricator" class="headerlink" title="phabricator"></a>phabricator</h2><p>诞生于Facebook内部，是一套基于Web的软件开发协作工具，包括代码审查工具Differential，资源库浏览器Diffusion，变更监测工具Herald，Bug跟踪工具Maniphest和维基工具Phriction。Phabricator可与Git、Mercurial和Subversion集成使用。</p><p>其本身是PHP开源程序：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/phacility/phabricator">https://github.com/phacility/phabricator</a></p><h3 id="系统配置"><a href="#系统配置" class="headerlink" title="系统配置"></a>系统配置</h3><p>PHP环境请自行google，这里记录nginx配置</p><pre><code class="hljs nginx"><span class="hljs-section">server</span> &#123;
+<!DOCTYPE HTML>
+<html class="no-js" lang="zh-Hans">
+<head>
+    <!--[if lte IE 9]>
+    <meta http-equiv="refresh" content="0;url=https://tomartisan.com/warn.html">
+<![endif]-->
+
+<meta charset="utf-8" />
+<title>codereview姿势探索 | Tomartisan(托码特人)</title>
+<meta name="keywords" content="cr，codereview，代码审查，phabricator，phabricator guide" />
+<meta name="description" content="关于代码审查的一些思考和实践整理，特别是Phabricator工具在macOS下的使用体验。" />
+<meta name="author" content="托码斯(https://tangkunyin.com)" />
+<meta name="applicable-device" content="pc,mobile" />
+<meta name="format-detection" content="telephone=no,email=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Tomartisan(托码特人)" />
+<meta name="renderer" content="webkit" />
+<meta name="force-rendering" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="codereview姿势探索 | Tomartisan(托码特人)" />
+<meta property="og:description" content="关于代码审查的一些思考和实践整理，特别是Phabricator工具在macOS下的使用体验。" />
+<meta property="og:url" content="https://tomartisan.com" />
+<meta property="og:site_name" content="Tomartisan(托码特人)" />
+
+<link rel="dns-prefetch" href="https://tomartisan.com" />
+<link rel="preload" href="https://tomartisan.com/css/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin="anonymous" />
+<link rel="preload" href="https://tomartisan.com/css/JSimple.min.css" as="style" />
+<link rel="preload" href="https://tomartisan.com/js/SimpleCore.min.js" as="script" />
+<link rel="preload" href="https://tomartisan.com/images/avatar.webp" as="image" type="image/webp" />
+<link rel="preload" href="https://tomartisan.com/images/cover-day.webp" as="image" type="image/webp" />
+
+    <link rel="preconnect" href="https://tomartisan.disqus.com" />
+    <link rel="preconnect" href="https://c.disquscdn.com" />
+
+<link rel="icon" type="image/svg+xml" href="https://tomartisan.com/images/favicon.svg" />
+<link rel="alternate icon" type="image/png" href="https://tomartisan.com/images/favicon.png" />
+<link rel="alternate" type="application/xml" title="Site Map" href="https://tomartisan.com/sitemap.xml"/>
+<link rel="canonical" href="https://tomartisan.com/prodev/codereview-explore/" />
+
+
+<link rel="stylesheet" href="/css/JSimple.min.css">
+
+<style id="highl_css"></style>
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "mm174bqjn4");
+</script>
+<meta name="generator" content="Hexo 7.1.1"></head>
+<body>
+<div id="nav">
+    <nav class="nav-menu">
+        <a class="site-name current" href="/" title="TOMA">TOMA</a>
+        <a class="site-index current" href="/"><i class="fa fa-home"></i><span>首页</span></a>
+        <a href="/archives" title="归档"><i class="fa fa-archives"></i><span>归档</span></a>
+        <a href="/tags" title="标签"><i class="fa fa-tags"></i><span>标签</span></a>
+        <!-- custom single page of menus -->
+        
+        
+        <a href="/about" title="关于">
+            <i class="fa fa-question-circle"></i>
+            <span>关于</span>
+        </a>
+        
+    </nav>
+</div>
+
+<div class="nav-user">
+    <a class="btn-search" title="search bar" href="#" ><i class="fa fa-search"></i></a>
+    <a class="btn-read-mode" title="readMode bar" href="#" ><i class="fa fa-sun-o"></i></a>
+    
+        <a class="btn-sns-qr" href="javascript:" rel="external nofollow noreferrer"><i class="fa fa-weixin"></i></a>
+    
+</div>
+<div id="wrapper" class="clearfix">
+    <div id="body">
+        <div class="main" id="main">
+            <div id="cover">
+    <img class="cover-img" src="/images/cover-day.webp" alt="cover-img" loading="lazy"/>
+    <div class="cover-info">
+        <img class="avatar" src="/images/avatar.webp" width="100" alt="avatar" loading="lazy"/>
+        <h1>托码特人</h1>
+        <h3>用代码摇滚这个世界</h3>
+        <h4>一个关注科技与人文的技术博客</h4>
+        <div class="cover-sns">
+            
+    <div class="btn btn-medium">
+        <a href="https://tomartisan.medium.com" title="medium" rel="external nofollow noopener" target="_blank">
+            <i class="fa fa-medium"></i>
+        </a>
+    </div>
+
+    <div class="btn btn-youtube">
+        <a href="https://www.youtube.com/@itomartisan" title="youtube" rel="external nofollow noopener" target="_blank">
+            <i class="fa fa-youtube"></i>
+        </a>
+    </div>
+
+    <div class="btn btn-twitter">
+        <a href="https://x.com/tomartisan" title="twitter" rel="external nofollow noopener" target="_blank">
+            <i class="fa fa-twitter"></i>
+        </a>
+    </div>
+
+    <div class="btn btn-reddit">
+        <a href="https://www.reddit.com/user/tomartisan" title="reddit" rel="external nofollow noopener" target="_blank">
+            <i class="fa fa-reddit"></i>
+        </a>
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+            <div class="page-title">
+    <ul>
+        <li><a href="/">最新</a></li>
+        
+            
+                <li class="active">
+                    <a href="/categories/prodev" data-name="产品研发">产品研发</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/ditech" data-name="数码科技">数码科技</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/hulife" data-name="人文生活">人文生活</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/groceries" data-name="杂货铺">杂货铺</a>
+                </li>
+            
+        
+        <li class="page-search">
+    <form id="search" class="search-form">
+        <input type="text"
+               readonly="readonly"
+               id="local-search-input-tip"
+               placeholder="读物检索~" />
+        <button type="button" disabled="disabled" class="search-form-submit"><i class="fa fa-search"></i></button>
+    </form>
+</li>
+
+    </ul>
+</div>
+<div class="main-inner">
+    <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+        <div class="post-header">
+            <div class="post-author clearfix" itemscope itemtype="https://schema.org/Person">
+                <a class="avatar fleft" target="_blank" href="https://bento.me/tomartisan" rel="author noopener external nofollow noreferrer">
+                    <img width="48" src="/images/avatar.webp" alt="avatar" itemprop="image"/>
+                </a>
+                <p><span class="label">作者</span>
+                    <a target="_blank" rel="noopener external nofollow noreferrer" href="https://bento.me/tomartisan" itemprop="url"><span itemprop="name">托码斯</span></a>
+                    <span itemprop="datePublished" content="2020-08-26T17:15:42.000+08:00">最后编辑于&nbsp;2020-08-26</span>
+                </p>
+                <p itemprop="description">一个写码为生的「文人黑客」</p>
+            </div>
+            <h1 class="post-title">
+                <a target="_self" href="https://tomartisan.com/prodev/codereview-explore/" itemprop="mainEntityOfPage"><span itemprop="headline">CodeReview姿势探索</span></a>
+            </h1>
+            <div class="post-meta" itemprop="wordCount">
+                本文共计2003个字 |
+                <span id="busuanzi_container_page_pv">
+                    你是第&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位到访读者
+                </span>
+            </div>
+        </div>
+        <div class="post-content markdown-body" itemprop="articleBody">
+            <h2 id="Code-Review的意义"><a href="#Code-Review的意义" class="headerlink" title="Code Review的意义"></a>Code Review的意义</h2><p>code review是现代软件开发非常有意义的一种技术管理方法，其价值不止在于代码的准入和找bug，也是所有人技术交流和成长的一种手段，总结CR的意义，不限于：</p>
+<ul>
+<li>找出可能的坑</li>
+<li>帮助新人成长</li>
+<li>互相督促代码质量</li>
+<li>互相学习设计理念及编码思路</li>
+</ul>
+<p>理想情况下所有代码合并都必须进行code review，并且必须CC整个组，让你的每一个合并都更认真地对待</p>
+<h2 id="phabricator"><a href="#phabricator" class="headerlink" title="phabricator"></a>phabricator</h2><p>诞生于Facebook内部，是一套基于Web的软件开发协作工具，包括代码审查工具Differential，资源库浏览器Diffusion，变更监测工具Herald，Bug跟踪工具Maniphest和维基工具Phriction。Phabricator可与Git、Mercurial和Subversion集成使用。</p>
+<p>其本身是PHP开源程序：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/phacility/phabricator">https://github.com/phacility/phabricator</a></p>
+<h3 id="系统配置"><a href="#系统配置" class="headerlink" title="系统配置"></a>系统配置</h3><p>PHP环境请自行google，这里记录nginx配置</p>
+<pre><code class="hljs nginx"><span class="hljs-section">server</span> &#123;
     
     <span class="hljs-attribute">set</span> <span class="hljs-variable">$content</span> <span class="hljs-string">&quot;~/dev-lib/phabricator/webroot&quot;</span>;
 
@@ -20,15 +208,128 @@
         <span class="hljs-attribute">include</span> /usr/local/etc/nginx/fastcgi.conf;
     &#125;    
 
-&#125;</code></pre><p>运行后，会提示通过命令设置<strong>Mysql</strong>信息，一般情况下直接设置密码即可</p><p><img src="/img/2020/15984343118360.jpg"></p><p>接着，会让你更新数据库信息，同样按提示操作即可</p><p><img src="/img/2020/15984345189850.jpg"><br><img src="/img/2020/15984344260057.jpg"></p><p>如此<strong>phabricator</strong>就算安装完成了，接下来根据引导配置一下系统各项参数。以下这些看情况配置就好</p><p><img src="/img/2020/15984364325138.jpg"></p><h3 id="项目配置"><a href="#项目配置" class="headerlink" title="项目配置"></a>项目配置</h3><p>先下载并配置环境变量：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/phacility/arcanist">https://github.com/phacility/arcanist</a><br>再设置帐号信任：</p><pre><code class="hljs bash">arc set-config default http://phabricator.tangkunyin.com/
-arc install-certificate http://phabricator.tangkunyin.com/</code></pre><p>执行后会提示到网站上找到对应的token，找到后粘贴输入。注意提示的网址应该是：<a target="_blank" rel="noopener external nofollow noreferrer" href="http://phabricator.tangkunyin.com/conduit/login/">http://phabricator.tangkunyin.com/conduit/login/</a>，如果不是重新登录以加载新的配置</p><p>最后在项目中创建**.arcconfig**文件并配置基础项，完整配置请自提自：<code>arc get-config --verbose</code></p><pre><code class="hljs json"><span class="hljs-punctuation">&#123;</span>
+&#125;</code></pre>
+
+<p>运行后，会提示通过命令设置<strong>Mysql</strong>信息，一般情况下直接设置密码即可</p>
+<p><img src="/img/2020/15984343118360.jpg"></p>
+<p>接着，会让你更新数据库信息，同样按提示操作即可</p>
+<p><img src="/img/2020/15984345189850.jpg"><br><img src="/img/2020/15984344260057.jpg"></p>
+<p>如此<strong>phabricator</strong>就算安装完成了，接下来根据引导配置一下系统各项参数。以下这些看情况配置就好</p>
+<p><img src="/img/2020/15984364325138.jpg"></p>
+<h3 id="项目配置"><a href="#项目配置" class="headerlink" title="项目配置"></a>项目配置</h3><p>先下载并配置环境变量：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/phacility/arcanist">https://github.com/phacility/arcanist</a><br>再设置帐号信任：</p>
+<pre><code class="hljs bash">arc set-config default http://phabricator.tangkunyin.com/
+arc install-certificate http://phabricator.tangkunyin.com/</code></pre>
+
+<p>执行后会提示到网站上找到对应的token，找到后粘贴输入。注意提示的网址应该是：<a target="_blank" rel="noopener external nofollow noreferrer" href="http://phabricator.tangkunyin.com/conduit/login/">http://phabricator.tangkunyin.com/conduit/login/</a>，如果不是重新登录以加载新的配置</p>
+<p>最后在项目中创建**.arcconfig**文件并配置基础项，完整配置请自提自：<code>arc get-config --verbose</code></p>
+<pre><code class="hljs json"><span class="hljs-punctuation">&#123;</span>
   <span class="hljs-attr">&quot;phabricator.uri&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;https://phabricator.d.xiaomi.net/&quot;</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">&quot;history.immutable&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span>
-<span class="hljs-punctuation">&#125;</span></code></pre><h4 id="review步骤"><a href="#review步骤" class="headerlink" title="review步骤"></a>review步骤</h4><p>1、git commit你的修改<br>2、开始review</p><pre><code class="hljs bash">arc diff commit_id --create
+<span class="hljs-punctuation">&#125;</span></code></pre>
+
+<h4 id="review步骤"><a href="#review步骤" class="headerlink" title="review步骤"></a>review步骤</h4><p>1、git commit你的修改<br>2、开始review</p>
+<pre><code class="hljs bash">arc diff commit_id --create
 
 或修改
 
-arc diff commit_id --update D12306  （这儿的D12306是上一次review时的revisionId）</code></pre><p>3、填写review信息</p><p><img src="/img/2020/15984431302261.jpg"></p><p>4、现在你会收到邮件，也可以在网站上看到你的review，请大家评审吧</p><p>5、merge仍然要在gitlab中完成，merge消息中要带上phabricator的review地址，证明这次merge是review过的，收到了accept的review才进行合并</p><p><strong>需要注意的是我这里并没有提到邮件发送配置，实际过程是要配置的，不然上边的邮件肯定发不出去</strong></p><p>具体参考这篇文章：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://cloud.tencent.com/developer/article/1609447">https://cloud.tencent.com/developer/article/1609447</a></p><p>平台操作资料：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://jaycelau.github.io/2018/08/27/Phabricator-code-review-pre-push-%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C/">Phabricator Code Review操作手册</a></p></div><div class="post-tool"><a class="btn-thumbs-up" href="javascript:void(0);" rel="external nofollow noreferrer" data-cid="52" title="95"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 赞赏</a></div><div class="post-tags">标签： <a href="/tags/efficiency/">生产力</a> <a href="/tags/infrastructure/">基础架构</a></div></article><p style="text-align:center">请注意: 本文所述内容及观点仅代表个人看法，由于知识水平有限，行文难免出现差错，欢迎留言交流。谢谢！</p><div id="disqus_thread"></div><script>if("https://tomartisan.com"===location.origin){var disqus_config=function(){this.page.url=location.href,this.page.identifier=location.pathname};!function(){var t=document,i=t.createElement("script");i.src="https://tomartisan.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(i)}()}</script><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener external nofollow noreferrer" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div></div></div><footer class="footer"><div class="footer-inner" style="text-align:center"><p>本站已建立&nbsp;<a href="/about/#我的那些青葱岁月" id="siteBuildingTime"></a>&nbsp;天， <span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span><br>©2017-<span id="cpYear"></span> 基于&nbsp;<a href="http://hexo.io" target="_blank" rel="external nofollow noopener" title="Hexo">Hexo</a> ，主题采用&nbsp;&nbsp;<a href="https://github.com/tangkunyin/hexo-theme-jsimple" target="_blank" rel="external nofollow noopener" title="JSimple theme">JSimple</a> ，作者&nbsp;<a href="https://tangkunyin.com" target="_blank" title="author">托码斯</a> ，托管于 <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener" title="GitHub Pages">GitHub Pages</a> ，<a href="https://tomartisan.com/sitemap.xml" title="网站地图" rel="alternate" type="application/xml">网站地图</a></p></div></footer></div><div class="popup search-popup local-search-popup"><div class="local-search-header clearfix"><span class="search-icon"><i class="fa fa-search"></i></span><span class="popup-btn-close"><i class="fa fa-times-circle"></i></span><div class="local-search-input-wrapper"><input id="local-search-input" spellcheck="true" type="text" autocomplete="off" placeholder="请输入查询关键词"></div></div><div id="local-search-result"></div></div><div class="fixed-btn"><a class="btn-gotop" href="javascript:" rel="external nofollow noreferrer"><i class="fa fa-angle-up"></i></a></div><script>(function() {
+arc diff commit_id --update D12306  （这儿的D12306是上一次review时的revisionId）</code></pre>
+
+<p>3、填写review信息</p>
+<p><img src="/img/2020/15984431302261.jpg"></p>
+<p>4、现在你会收到邮件，也可以在网站上看到你的review，请大家评审吧</p>
+<p>5、merge仍然要在gitlab中完成，merge消息中要带上phabricator的review地址，证明这次merge是review过的，收到了accept的review才进行合并</p>
+<p><strong>需要注意的是我这里并没有提到邮件发送配置，实际过程是要配置的，不然上边的邮件肯定发不出去</strong></p>
+<p>具体参考这篇文章：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://cloud.tencent.com/developer/article/1609447">https://cloud.tencent.com/developer/article/1609447</a></p>
+<p>平台操作资料：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://jaycelau.github.io/2018/08/27/Phabricator-code-review-pre-push-%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C/">Phabricator Code Review操作手册</a></p>
+
+            
+                
+            
+        </div>
+
+        
+            <div class="post-tool">
+                <a class="btn-thumbs-up" href="javascript:void(0);" rel="external nofollow noreferrer" data-cid="52" title="95">
+                    <i class="fa fa-thumbs-up" aria-hidden="true"></i> 赞赏
+                </a>
+            </div>
+        
+
+        
+        <div class="post-tags">标签：
+            
+            <a href="/tags/efficiency/">生产力</a>
+            
+            <a href="/tags/infrastructure/">基础架构</a>
+            
+        </div>
+        
+    </article>
+    
+        <p style="text-align: center">请注意: 本文所述内容及观点仅代表个人看法，由于知识水平有限，行文难免出现差错，欢迎留言交流。谢谢！</p>
+    
+    
+    
+    
+        <div id="disqus_thread"></div>
+        <script>
+            if (location.origin === 'https://tomartisan.com') {
+                var disqus_config = function () {
+                    this.page.url = location.href;
+                    this.page.identifier = location.pathname;
+                };
+                (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://tomartisan.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            }
+        </script>
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener external nofollow noreferrer" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+
+</div>
+
+        </div><!-- end #main-->
+    </div><!-- end #body -->
+    <footer class="footer">
+    <div class="footer-inner" style="text-align: center">
+        <p>
+            本站已建立&nbsp;<a href="/about/#我的那些青葱岁月" id="siteBuildingTime"></a>&nbsp;天， <span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span><br/>
+            ©2017-<span id="cpYear"></span> 基于&nbsp;<a href="http://hexo.io" target="_blank" rel="external nofollow noopener" title="Hexo">Hexo</a>
+            ，主题采用&nbsp;&nbsp;<a href="https://github.com/tangkunyin/hexo-theme-jsimple" target="_blank" rel="external nofollow noopener" title="JSimple theme">JSimple</a>
+            ，作者&nbsp;<a href="https://tangkunyin.com" target="_blank" title="author">托码斯</a>
+            ，托管于 <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener" title="GitHub Pages">GitHub Pages</a>
+            ，<a href="https://tomartisan.com/sitemap.xml" title="网站地图" rel="alternate" type="application/xml">网站地图</a>
+        </p>
+    </div>
+</footer>
+</div>
+<!-- search pop -->
+<div class="popup search-popup local-search-popup">
+    <div class="local-search-header clearfix">
+        <span class="search-icon">
+            <i class="fa fa-search"></i>
+        </span>
+        <span class="popup-btn-close">
+            <i class="fa fa-times-circle"></i>
+        </span>
+        <div class="local-search-input-wrapper">
+            <input id="local-search-input"
+                   spellcheck="true"
+                   type="text"
+                   autocomplete="off"
+                   placeholder="请输入查询关键词"/>
+        </div>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+<div class="fixed-btn">
+    <a class="btn-gotop" href="javascript:" rel="external nofollow noreferrer"> <i class="fa fa-angle-up"></i></a>
+</div>
+<script type="text/javascript">
+    (function() {
         let jsi_config = {
             isPost: 'true',
             buildingTime: '05/26/2024',
@@ -47,4 +348,25 @@ arc diff commit_id --update D12306  （这儿的D12306是上一次review时的re
             }
         
         window.jsi_config = jsi_config;
-    })()</script><script async src="/js/SimpleCore.min.js"></script><script defer src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script async id="dsq-count-scr" src="//tomartisan.disqus.com/count.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-9963MP8321"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-9963MP8321")</script></body></html>
+    })()
+</script>
+<script async src="/js/SimpleCore.min.js"></script>
+<script defer src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    
+        <script async id="dsq-count-scr" src="//tomartisan.disqus.com/count.js"></script>
+    
+
+<!-- google analytics -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9963MP8321"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-9963MP8321');
+    </script>
+
+</body>
+</html>

@@ -4,7 +4,7 @@ html {
 
 body {
     margin: 0;
-    padding-left: 170px;
+    padding-left: 150px;
     color: #1a1a1a;
     font: 15px/1.6 'Biaodian Pro Sans GB', 'Helvetica Neue', Helvetica, Arial, 'pingfang sc', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', STHeiti, SimSun, sans-serif;
     text-rendering: optimizeLegibility;
@@ -469,7 +469,7 @@ img.avatar {
     bottom: 0;
     right: 0;
     z-index: 1024;
-    left: 170px;
+    left: 150px;
     width: 25%;
 }
 
@@ -536,17 +536,19 @@ h4 {
     left: 0;
     z-index: 2048;
     height: 100%;
-    width: 170px;
+    width: 150px;
     background-color: #2a2a2a;
     text-align: left;
 }
 
 #nav .nav-menu a {
     display: block;
-    width: 100%;
-    height: 45px;
-    line-height: 45px;
     color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
 }
 
 #nav .nav-menu a i {
@@ -557,7 +559,7 @@ h4 {
 }
 
 #nav .nav-menu a span {
-    padding-left: 5px;
+    padding-left: 8px;
 }
 
 #nav a.site-name {
@@ -1070,7 +1072,7 @@ img.alignright {
 
 .single .page-title {
     top: 0;
-    left: 170px;
+    left: 150px;
     right: 0;
 }
 
@@ -1801,11 +1803,19 @@ body.night-mode a,
 /**************************** 适配不同尺寸屏幕 ************************************/
 @media (max-width: 1588px) {
     body {
-        padding-left: 45px;
+        padding-left: 60px;
     }
 
     #nav {
-        width: 45px;
+        width: 60px;
+    }
+
+    #nav .nav-menu a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 48px;
+        line-height: 48px;
     }
 
     #nav .nav-menu a.site-index,
@@ -1817,8 +1827,12 @@ body.night-mode a,
         display: block;
     }
 
+    #nav .nav-menu a i {
+        padding: 0;
+    }
+
     #cover {
-        left: 45px;
+        left: 60px;
     }
 
     .main,
@@ -1827,7 +1841,7 @@ body.night-mode a,
     }
 
     .single .page-title {
-        left: 45px;
+        left: 60px;
     }
 }
 
